@@ -15,14 +15,14 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 
 <div align="center">
     <!-- <a href="https://github.com/X-PLUG/mPLUG-DocOwl/blob/main/LICENSE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a> -->
-    <a href="http://mm-chatgpt.oss-cn-zhangjiakou.aliyuncs.com/mplug_owl_demo/released_checkpoint/mPLUG_Owl_paper.pdf"><img src="assets/Paper-PDF-orange.svg"></a>
+    <a href="http://mm-chatgpt.oss-cn-zhangjiakou.aliyuncs.com/mplug_owl_demo/released_checkpoint/mPLUG_DocOwl_paper.pdf"><img src="assets/Paper-PDF-orange.svg"></a>
     <!-- <a href="https://arxiv.org/abs/2304.14178"><img src="assets/Paper-Arxiv-orange.svg" ></a> -->
     <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FX-PLUG%2FmPLUG-DocOwl&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
     <a href="https://twitter.com/xuhaiya2483846/status/1654640739010351106"><img src='assets/-twitter-blue.svg'></a>
 </div>
 
 <div align="center">
-<a>English</a> | <a href="README_zh.md">简体中文</a>
+<a>English</a>
 <hr>
 </div>
 
@@ -58,8 +58,7 @@ The evaluation dataset OwlEval can be found in ```./OwlEval```.
 If you found this work useful, consider giving this repository a star and citing our paper as followed:
 ```
 @misc{ye2023mplugdocowl,
-      title={mPLUG-DocOwl: Modularized Multimodal Large
-Language Model for Document Understanding}, 
+      title={mPLUG-DocOwl: Modularized Multimodal Large Language Model for Document Understanding}, 
       author={Jiabo Ye, Anwen Hu, Haiyang Xu, Qinghao Ye, Ming Yan, Yuhao Dan, Chenlin Zhao, Guohai Xu, Chenliang Li, Junfeng Tian, Qian Qi, Ji Zhang, Fei Huang},
       year={2023},
       archivePrefix={arXiv},
