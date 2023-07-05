@@ -22,7 +22,6 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 </div>
 
 <div align="center">
-<a>English</a>
 <hr>
 </div>
 
