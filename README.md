@@ -14,11 +14,11 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 </div>
 
 <div align="center">
-    <!-- <a href="https://github.com/X-PLUG/mPLUG-DocOwl/blob/main/LICENSE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a> -->
+    <a href="https://github.com/X-PLUG/mPLUG-DocOwl/blob/main/LICENSE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a>
     <a href="http://mm-chatgpt.oss-cn-zhangjiakou.aliyuncs.com/mplug_owl_demo/released_checkpoint/mPLUG_DocOwl_paper.pdf"><img src="assets/Paper-PDF-orange.svg"></a>
-    <!-- <a href="https://arxiv.org/abs/2304.14178"><img src="assets/Paper-Arxiv-orange.svg" ></a> -->
+    <a href="https://arxiv.org/abs/2307.02499"><img src="assets/Paper-Arxiv-orange.svg" ></a>
     <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FX-PLUG%2FmPLUG-DocOwl&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
-    <a href="https://twitter.com/xuhaiya2483846/status/1654640739010351106"><img src='assets/-twitter-blue.svg'></a>
+    <a href="https://twitter.com/xuhaiya2483846/status/1677117982840090625"><img src='assets/-twitter-blue.svg'></a>
 </div>
 
 <div align="center">
@@ -26,24 +26,31 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 </div>
 
 ## News
-* 🔥 [07.05] We release the technical report and evaluation set. The demo and source code is coming soon.
+* 🔥 [07.07] We release the technical report and evaluation set. The demo is coming soon.
 
 ## Spotlights
 
-* Strongly document understanding ability.
-* Free-form interaction.
-
+* An OCR-free end-to-end multimodal large language model.
+* Applicable to various document-related scenarios.
+* Capable of free-form question-answering and multi-round interaction.
 
 * Comming soon
-
     - [ ] Online Demo on HuggingFace and ModelScope.
-    - [ ] Training and Inference code base.
+    - [ ] Source code.
+## Overview
 
-  
+![images](assets/overview.jpg)
+
+## Cases
+
+![images](assets/cases_git.jpg)
 
 
-## OwlEval
-The evaluation dataset OwlEval can be found in ```./OwlEval```.
+
+
+
+## DocLLM
+The evaluation dataset DocLLM can be found in ```./DocLLM```.
 
 
 ## Related Projects
@@ -58,8 +65,9 @@ If you found this work useful, consider giving this repository a star and citing
 ```
 @misc{ye2023mplugdocowl,
       title={mPLUG-DocOwl: Modularized Multimodal Large Language Model for Document Understanding}, 
-      author={Jiabo Ye, Anwen Hu, Haiyang Xu, Qinghao Ye, Ming Yan, Yuhao Dan, Chenlin Zhao, Guohai Xu, Chenliang Li, Junfeng Tian, Qian Qi, Ji Zhang, Fei Huang},
+      author={Jiabo Ye and Anwen Hu and Haiyang Xu and Qinghao Ye and Ming Yan and Yuhao Dan and Chenlin Zhao and Guohai Xu and Chenliang Li and Junfeng Tian and Qian Qi and Ji Zhang and Fei Huang},
       year={2023},
+      eprint={2307.02499},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
