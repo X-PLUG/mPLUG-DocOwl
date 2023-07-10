@@ -15,6 +15,7 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 
 <div align="center">
     <a href="https://github.com/X-PLUG/mPLUG-DocOwl/blob/main/LICENSE"><img src="assets/LICENSE-Apache%20License-blue.svg" alt="License"></a>
+    <a href="https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary"><img src="assets/Demo-ModelScope-brightgreen.svg" alt="Demo ModelScope"></a>
     <a href="http://mm-chatgpt.oss-cn-zhangjiakou.aliyuncs.com/mplug_owl_demo/released_checkpoint/mPLUG_DocOwl_paper.pdf"><img src="assets/Paper-PDF-orange.svg"></a>
     <a href="https://arxiv.org/abs/2307.02499"><img src="assets/Paper-Arxiv-orange.svg" ></a>
     <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FX-PLUG%2FmPLUG-DocOwl&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
@@ -26,7 +27,8 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 </div>
 
 ## News
-* 🔥 [07.07] We release the technical report and evaluation set. The demo is coming soon.
+* 🔥 [07.10] The demo on [ModelScope](https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary) is avaliable.
+* [07.07] We release the technical report and evaluation set. The demo is coming soon.
 
 ## Spotlights
 
@@ -35,8 +37,16 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 * Capable of free-form question-answering and multi-round interaction.
 
 * Comming soon
-    - [ ] Online Demo on HuggingFace and ModelScope.
+    - [x] Online Demo on ModelScope.
+    - [ ] Online Demo on HuggingFace.
     - [ ] Source code.
+    - [ ] Instruction Training Data.
+          
+## Online Demo
+
+### ModelScope
+<a href="https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary"><img src="https://modelscope.oss-cn-beijing.aliyuncs.com/modelscope.gif" width="250"/></a>
+
 ## Overview
 
 ![images](assets/overview.jpg)
