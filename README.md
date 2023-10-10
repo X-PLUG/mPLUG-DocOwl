@@ -27,7 +27,9 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 </div>
 
 ## News
-* 🔥 [07.10] The demo on [ModelScope](https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary) is avaliable.
+* 🔥 [10.10] Our paper [UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model](https://arxiv.org/abs/2310.05126) is accepted by EMNLP 2023.
+* 🔥 [10.10] The source code and instruction data will be released in [UReader](https://github.com/LukeForeverYoung/UReader).
+* [07.10] The demo on [ModelScope](https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary) is avaliable.
 * [07.07] We release the technical report and evaluation set. The demo is coming soon.
 
 ## Spotlights
@@ -40,7 +42,7 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
     - [x] Online Demo on ModelScope.
     - [ ] Online Demo on HuggingFace.
     - [ ] Source code.
-    - [ ] Instruction Training Data.
+    - [x] Instruction Training Data.
           
 ## Online Demo
 
@@ -73,6 +75,14 @@ The evaluation dataset DocLLM can be found in ```./DocLLM```.
 ## Citation
 If you found this work useful, consider giving this repository a star and citing our paper as followed:
 ```
+@misc{ye2023ureader,
+      title={UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model}, 
+      author={Jiabo Ye and Anwen Hu and Haiyang Xu and Qinghao Ye and Ming Yan and Guohai Xu and Chenliang Li and Junfeng Tian and Qi Qian and Ji Zhang and Qin Jin and Liang He and Xin Alex Lin and Fei Huang},
+      year={2023},
+      eprint={2310.05126},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 @misc{ye2023mplugdocowl,
       title={mPLUG-DocOwl: Modularized Multimodal Large Language Model for Document Understanding}, 
       author={Jiabo Ye and Anwen Hu and Haiyang Xu and Qinghao Ye and Ming Yan and Yuhao Dan and Chenlin Zhao and Guohai Xu and Chenliang Li and Junfeng Tian and Qian Qi and Ji Zhang and Fei Huang},
