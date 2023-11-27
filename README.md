@@ -28,7 +28,7 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 
 ## News
 * 🔥 [10.10] Our paper [UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model](https://arxiv.org/abs/2310.05126) is accepted by EMNLP 2023.
-* 🔥 [10.10] The source code and instruction data will be released in [UReader](https://github.com/LukeForeverYoung/UReader).
+<!-- * 🔥 [10.10] The source code and instruction data will be released in [UReader](https://github.com/LukeForeverYoung/UReader). -->
 * [07.10] The demo on [ModelScope](https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary) is avaliable.
 * [07.07] We release the technical report and evaluation set. The demo is coming soon.
 
