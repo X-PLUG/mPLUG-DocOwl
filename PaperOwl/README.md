@@ -13,7 +13,7 @@ Chenliang Li, Qi Qian, Ji Zhang, Fei Huang
 <div align="center">
 <a href=""><img src="assets/Paper-PDF-orange.svg"></a>
 <a href=""><img src="assets/Paper-Arxiv-orange.svg" ></a>
-
+<hr>
 <img src="assets/intro_case.jpeg" alt="image" width="50%" height="auto">
 </div>
 
