@@ -2,9 +2,11 @@
 
 <div align="center">
 
-Anwen Hu*, Yaya Shi*, Haiyang Xu, Jiabo Ye, Qinghao Ye, Ming Yan, Chenliang Li, Qi Qian, Ji Zhang, Fei Huang
+Anwen Hu*, Yaya Shi*, Haiyang Xu†, Jiabo Ye, Qinghao Ye, Ming Yan†, Chenliang Li, Qi Qian, Ji Zhang, Fei Huang
 
-*Equal Contribution
+Alibaba Group
+
+*Equal Contribution; † Corresponding Author
 
 </div>
 
