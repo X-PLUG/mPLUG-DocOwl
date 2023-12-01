@@ -13,7 +13,7 @@ Alibaba Group
 <hr>
 <div align="center">
 <a href="http://anwenhu.oss-cn-zhangjiakou.aliyuncs.com/PaperOwl_arxiv.pdf"><img src="assets/Paper-PDF-orange.svg"></a>
-<a href=""><img src="assets/Paper-Arxiv-orange.svg" ></a>
+<a href="https://arxiv.org/abs/2311.18248"><img src="assets/Paper-Arxiv-orange.svg" ></a>
 <p>
 <img src="assets/intro_case.jpeg" alt="image" width="50%" height="auto">
 </div>
