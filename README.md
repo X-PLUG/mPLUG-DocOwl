@@ -38,7 +38,7 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 * Applicable to various document-related scenarios.
 * Capable of free-form question-answering and multi-round interaction.
 
-* Comming soon
+* Coming soon
     - [x] Online Demo on ModelScope.
     - [ ] Online Demo on HuggingFace.
     - [ ] Source code.
