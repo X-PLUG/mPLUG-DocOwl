@@ -20,6 +20,13 @@ Alibaba Group
 </p>
 
 ## M-Paper
+
+M-Paper is a Scientific Diagram Analysis dataset based on 48k high-quality arxiv papers on Machine Learning. M-Paper supports 3 tasks: Diagram Captioning, Diagram Analysis and Outline Recommendation.
+
+
+The construction pipeline of M-Paper is as follows:
+![images](assets/data_process.png)
+
 Download M-Paper dataset from []().
 
 The dataset is orgnized in such format:
@@ -49,6 +56,11 @@ The statistic of sample number of each task in M-Paper is shown as follows:
 
 The "task_type" item in each sample is organzied as $Object_$Task, where $Object indicates the understanding objects, including "figure", "table", "tablelatex", "figure_table" and "figure_tablelatex". $Task indicates the task, including "cap", "analysis", "outline_to_analysis", "simple_outline" and "detailed_outline".
 
+<div align="center">
+<img src="assets/paper_category.png" alt="image" width="45%" height="auto">
+<img src="assets/diagram_distribution.png" alt="image" width="40%" height="auto">
+</div>
+</p>
 
 
 
