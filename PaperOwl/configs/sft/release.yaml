@@ -1,0 +1,17 @@
+train_processors: {
+  sft: {type: 'DocNewMultiScaleSFTProcessor', image_size: 224, 
+        anchors: [[2, 2]]}
+}
+
+valid_processors: {
+  sft: {type: 'DocNewMultiScaleSFTProcessor', image_size: 224,
+        anchors: [[2, 2]]}
+}
+
+data_files: [
+  'M-Paper/sft/3tasks_train.jsonl',
+  'M-Paper/sft/3tasks_val.jsonl'
+]
+
+patch_pos_embed_type: post
+
