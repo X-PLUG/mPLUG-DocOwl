@@ -36,9 +36,20 @@ M-Paper
 │   ├── analysis_{split}.jsonl
 │   └── outline_{split}.jsonl
 ```
-The ```./imgs``` directory contains figure or table images. Files in the ```./sft``` directory are the instruction-tuning data. Files in the ```./meta``` directory store different components, e.g. [Context], [Outline], [Table_Latex], [Question], [Answer]，etc, of each sample in a dictionary format. 
+The ```./imgs``` directory contains figure or table images. Files in the ```./sft``` directory are the instruction-tuning data. The "cap", "analysis" and "outline" refer to "Diagram Captioning", "Diagram Analysis" and "Outline Recommendation", respectively. Files in the ```./meta``` directory store different components, e.g. [Context], [Outline], [Table_Latex], [Question], [Answer]，etc, of each sample in a dictionary format. 
+
+The statistic of sample number of each task in M-Paper is shown as follows:
+
+| Task      |   Train | Val | Train | 
+| ----------- | ----------- | ----------- | ----------- |
+| Diagram Captioning      | 343,546   | 1,131 | 1,133
+| Diagram Analysis   | 267,476 | 1,087 | 1,195 |
+| Outline Recommendation   | 78,041 | 3,425 | 3,442 |
+
 
 The "task_type" item in each sample is organzied as $Object_$Task, where $Object indicates the understanding objects, including "figure", "table", "tablelatex", "figure_table" and "figure_tablelatex". $Task indicates the task, including "cap", "analysis", "outline_to_analysis", "simple_outline" and "detailed_outline".
+
+
 
 
 ## Training, Inference and Evaluation
