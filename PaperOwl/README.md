@@ -21,7 +21,7 @@ Alibaba Group
 
 ## M-Paper
 
-M-Paper is a Scientific Diagram Analysis dataset based on 48k high-quality arxiv papers on Machine Learning. M-Paper supports 3 tasks: Diagram Captioning, Diagram Analysis and Outline Recommendation.
+M-Paper is a Scientific Diagram Analysis dataset based on 48k high-quality arxiv papers on Machine Learning. M-Paper contains 447k diagram images and supports 3 tasks: Diagram Captioning, Diagram Analysis and Outline Recommendation.
 
 
 The construction pipeline of M-Paper is as follows:
