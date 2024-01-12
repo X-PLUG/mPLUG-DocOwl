@@ -27,7 +27,11 @@ M-Paper is a Scientific Diagram Analysis dataset based on 48k high-quality arxiv
 The construction pipeline of M-Paper is as follows:
 ![images](assets/data_process.png)
 
-Download M-Paper dataset from huggingface [mPLUG/M-Paper](https://huggingface.co/datasets/mPLUG/M-Paper). The images (~639G) are split into 16 files, run ```cat partial-imgs* > imgs.tar.gz```.
+Download M-Paper dataset from huggingface [mPLUG/M-Paper](https://huggingface.co/datasets/mPLUG/M-Paper). High-resolution images (~639G) are split into 16 files, run following cmds to prepare images.
+```
+cat partial-imgs* > imgs.tar.gz
+tar -zxvf imgs.tar.gz
+```
 
 The dataset is orgnized in such format:
 ```
