@@ -27,7 +27,7 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 </div>
 
 ## News
-* 🔥 [01.13] Our Scientific Diagram Analysis dataset [M-Paper](https://arxiv.org/abs/2311.18248) has been available in [HuggingFace](https://huggingface.co/datasets/mPLUG/M-Paper), containing 447k high-resolution diagram images and corresponding paragraph analysis.
+* 🔥 [01.13] Our Scientific Diagram Analysis dataset [M-Paper](https://github.com/X-PLUG/mPLUG-DocOwl/tree/main/PaperOwl) has been available in HuggingFace, containing 447k high-resolution diagram images and corresponding paragraph analysis.
 * [10.10] Our paper [UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model](https://arxiv.org/abs/2310.05126) is accepted by EMNLP 2023.
 <!-- * 🔥 [10.10] The source code and instruction data will be released in [UReader](https://github.com/LukeForeverYoung/UReader). -->
 * [07.10] The demo on [ModelScope](https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary) is avaliable.
