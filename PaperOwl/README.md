@@ -51,7 +51,7 @@ The ```./imgs``` directory contains figure or table images. Files in the ```./sf
 
 The statistic of sample number of each task in M-Paper is shown as follows:
 
-| Task      |   Train | Val | Train | 
+| Task      |   Train | Val | Test | 
 | ----------- | ----------- | ----------- | ----------- |
 | Diagram Captioning      | 343,546   | 1,131 | 1,133
 | Diagram Analysis   | 267,476 | 1,087 | 1,195 |
