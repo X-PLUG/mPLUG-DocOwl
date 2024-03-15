@@ -20,7 +20,7 @@ Anwen Hu, Haiyang Xu†, Jiabo Ye, Ming Yan†, Liang Zhang, Bo Zhang, Chen Li, 
 * Support multi-grained text recognition and text grounding
 * Support question answering with simple phrases or detailed explanations.
 
-* Comming soon
+## Comming soon
     - [ ] Training Data: DocStruct4M
     - [ ] Training Data: DocReason25K
     - [ ] Model: DocOwl 1.5, DocOwl 1.5-Chat
