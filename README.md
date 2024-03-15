@@ -4,7 +4,9 @@
 
 
 <div align="center">
-<h2>The Powerful Multi-modal LLM Family for OCR-free Document Understanding</h2>
+<h2>The Powerful Multi-modal LLM Family
+
+for OCR-free Document Understanding<h2>
 <strong>Alibaba Group</strong>
 </div>
 
@@ -28,7 +30,7 @@
 
 ## Cases
 
-![images](assets/docowl1.5_case.jpeg)
+![images](assets/docowl1.5_case.png)
 
   
 ## Online Demo
