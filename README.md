@@ -12,11 +12,11 @@ for OCR-free Document Understanding<h2>
 
 
 ## News
-* 🔥 [01.13] Our Scientific Diagram Analysis dataset [M-Paper](https://github.com/X-PLUG/mPLUG-DocOwl/tree/main/PaperOwl) has been available in HuggingFace, containing 447k high-resolution diagram images and corresponding paragraph analysis.
-* [10.10] Our paper [UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model](https://arxiv.org/abs/2310.05126) is accepted by EMNLP 2023.
+* 🔥 [2024.01.13] Our Scientific Diagram Analysis dataset [M-Paper](https://github.com/X-PLUG/mPLUG-DocOwl/tree/main/PaperOwl) has been available in HuggingFace, containing 447k high-resolution diagram images and corresponding paragraph analysis.
+* [2023.10.10] Our paper [UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model](https://arxiv.org/abs/2310.05126) is accepted by EMNLP 2023.
 <!-- * 🔥 [10.10] The source code and instruction data will be released in [UReader](https://github.com/LukeForeverYoung/UReader). -->
-* [07.10] The demo on [ModelScope](https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary) is avaliable.
-* [07.07] We release the technical report and evaluation set of DocOwl. The demo is coming soon.
+* [2023.07.10] The demo on [ModelScope](https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary) is avaliable.
+* [2023.07.07] We release the technical report and evaluation set of DocOwl. The demo is coming soon.
 
 ## Models
 - [**mPLUG-DocOwl1.5**](./DocOwl1.5/) (Arxiv 2024) - mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding
