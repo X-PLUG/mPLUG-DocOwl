@@ -16,6 +16,6 @@ Anwen Hu, Haiyang Xu†, Jiabo Ye, Ming Yan†, Liang Zhang, Bo Zhang, Chen Li, 
 
 ## Spotlights
 
-* Support docuemnt/table/chart parsing.
-* Support text recognition and text grounding
-* Support question answering with detailed explanations.
+* Support struct-aware document parsing, table to markdown, chart to markdonw.
+* Support multi-grained text recognition and text grounding
+* Support question answering with simple phrases or detailed explanations.
