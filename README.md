@@ -2,8 +2,9 @@
 <img src="assets/mPLUG_new1.png" width="80%">
 </div>
 
-# The Powerful Multi-modal LLM Family for OCR-free Document Understanding
+
 <div align="center">
+<h2>The Powerful Multi-modal LLM Family for OCR-free Document Understanding</h2>
 <strong>Alibaba Group</strong>
 </div>
 
@@ -16,18 +17,18 @@
 * [07.07] We release the technical report and evaluation set of DocOwl. The demo is coming soon.
 
 ## Models
-- [**mmPLUG-DocOwl1.5**](./DocOwl1.5/) (Arxiv 2024) - mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding
+- [**mPLUG-DocOwl1.5**](./DocOwl1.5/) (Arxiv 2024) - mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding
 
-- [**mmPLUG-PaperOwl**](./PaperOwl/) (Arxiv 2023) - mPLUG-PaperOwl: Scientific Diagram Analysis with the Multimodal Large Language Model
+- [**mPLUG-PaperOwl**](./PaperOwl/) (Arxiv 2023) - mPLUG-PaperOwl: Scientific Diagram Analysis with the Multimodal Large Language Model
 
 - [**UReader**](./UReader/) (EMNLP 2023) - UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model
 
-- [**mmPLUG-DocOwl**](./DocOwl/) (Arxiv 2023) - mPLUG-DocOwl: Modularized Multimodal Large Language Model for Document Understanding
+- [**mPLUG-DocOwl**](./DocOwl/) (Arxiv 2023) - mPLUG-DocOwl: Modularized Multimodal Large Language Model for Document Understanding
 
 
 ## Cases
 
-![images](assets/cases_git.jpg)
+![images](assets/docowl1.5_case.jpeg)
 
   
 ## Online Demo
