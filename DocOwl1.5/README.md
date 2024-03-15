@@ -19,3 +19,12 @@ Anwen Hu, Haiyang Xu†, Jiabo Ye, Ming Yan†, Liang Zhang, Bo Zhang, Chen Li, 
 * Support struct-aware document parsing, table to markdown, chart to markdown.
 * Support multi-grained text recognition and text grounding
 * Support question answering with simple phrases or detailed explanations.
+
+* Comming soon
+    - [ ] Training Data: DocStruct4M
+    - [ ] Training Data: DocReason25K
+    - [ ] Model: DocOwl 1.5, DocOwl 1.5-Chat
+    - [ ] Source code.
+    - [ ] Online Demo on ModelScope.
+    - [ ] Online Demo on HuggingFace.
+          
