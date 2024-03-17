@@ -1,7 +1,3 @@
-<div align="center">
-<img src="assets/mPLUG_new1.png" width="80%">
-</div>
-
 # mPLUG-DocOwl: Modularized Multimodal Large Language Model for Document Understanding
 <div align="center">
 Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin Zhao, Guohai Xu, Chenliang Li, Junfeng Tian, Qian Qi, Ji Zhang, Fei Huang

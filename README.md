@@ -30,7 +30,7 @@ for OCR-free Document Understanding<h2>
 
 ## Cases
 
-![images](assets/docowl1.5_case.png)
+![images](assets/docowl1.5_chat_case.png)
 
   
 ## Online Demo
