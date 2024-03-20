@@ -7,6 +7,13 @@ Anwen Hu, Haiyang Xu†, Jiabo Ye, Ming Yan†, Liang Zhang, Bo Zhang, Chen Li, 
 
 </div>
 
+
+<div align="center">
+<a href="http://arxiv.org/abs/2403.12895"><img src="assets/Paper-Arxiv-orange.svg" ></a>
+<p>
+</div>
+</p>
+
 <hr>
 <div align="center">
 <img src="assets/radar.png" alt="image" width="50%" height="auto">
