@@ -14,7 +14,7 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu, Qinghao Ye, Ming Yan, Guohai Xu, Chenliang Li,
 <a href="https://arxiv.org/abs/2310.05126"><img src="assets/Paper-Arxiv-orange.svg" ></a></div>
 <div align="center">
 <a href="https://huggingface.co/datasets/Mizukiluke/ureader-instruction-1.0">Dataset 🤗</a>
-<a href="https://huggingface.co/Mizukiluke/ureader-v1">Model 🤗</a></col>
+<a href="https://huggingface.co/Mizukiluke/ureader-v1">Model 🤗</a>
 
 ![images](assets/intro_case.jpg)
 
