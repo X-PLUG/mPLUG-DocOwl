@@ -31,9 +31,14 @@ Jiabo Ye*, Anwen Hu*, Haiyang Xu†, Qinghao Ye, Ming Yan†, Yuhao Dan, Chenlin
 * Comming soon
     - [x] Online Demo on ModelScope.
     - [ ] Online Demo on HuggingFace.
-    - [ ] Source code.
+    - [x] Source code.
     - [x] Instruction Training Data.
-          
+
+## Source Code
+
+mPLUG-DocOwl follows the training and inference code of [UReader](../UReader/).
+
+
 ## Online Demo
 
 ### ModelScope
