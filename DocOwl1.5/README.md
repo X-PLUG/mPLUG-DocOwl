@@ -26,6 +26,19 @@ Anwen Hu, Haiyang Xu†, Jiabo Ye, Ming Yan†, Liang Zhang, Bo Zhang, Chen Li, 
 </div>
 </p>
 
+## Spotlights
+
+* Support struct-aware document parsing, table to markdown, chart to markdown.
+* Support multi-grained text recognition and text grounding
+* Support question answering with simple phrases or detailed explanations.
+
+* Coming soon
+    - [x] Training Data: DocStruct4M, DocReason25K, DocDownsteam-1.0
+    - [x] Mutli-grained Text Localization Evaluation set: DocLocal4K
+    - [ ] Model: DocOwl 1.5, DocOwl 1.5-Chat
+    - [ ] Source code.
+    - [ ] Online Demo on ModelScope.
+    - [ ] Online Demo on HuggingFace.
 
 ## Training and Evaluation Datasets
 
@@ -39,7 +52,7 @@ tar -zxvf imgs.tar.gz
 tar -zxvf val_imgs.tar.gz
 ```
 
-The dataset is orgnized in such format:
+The dataset is organized in such format:
 ```
 DocStruct4M
 ├── imgs
@@ -59,7 +72,7 @@ cat partial-imgs* > imgs.tar.gz
 tar -zxvf imgs.tar.gz
 ```
 
-The dataset is orgnized in such format:
+The dataset is organized in such format:
 ```
 DocDownstream-1.0
 ├── meta
@@ -74,7 +87,7 @@ The ```./imgs``` directory contains images for the training/validation/test samp
 DocReason25K is instruction tuning set with detailed explanation for Visual Document Understanding. It's built based on training samples from DocVQA, InfographicsVQA, WikiTableQuestions, VisualMRC, ChartQA and TextVQA. Detailed explanations are given by GPT3.5/GPT4V and further filtred according to manually annoatetd simple answer.
 
 Download DocReason25K dataset from huggingface [mPLUG/DocReason25K](https://huggingface.co/datasets/mPLUG/DocReason25K). 
-The dataset is orgnized in such format:
+The dataset is organized in such format:
 ```
 DocReason25K
 ├── imgs
@@ -85,7 +98,7 @@ DocReason25K
 DocLocal4K is a evaluation set for Multi-grained Text Localization, covering both text recognition and text grounding tasks.
 
 Download DocLocal4K dataset from huggingface [mPLUG/DocLocal4K](https://huggingface.co/datasets/mPLUG/DocLocal4K). 
-The dataset is orgnized in such format:
+The dataset is organized in such format:
 ```
 DocLocal4K
 ├── imgs
@@ -94,22 +107,19 @@ DocLocal4K
 ```
 
 ## Model
+Coming soon...
 
 
 
+## Citation
+If you found this work useful, consider giving this repository a star and citing our paper as followed:
+```
+@article{hu2024docowl,
+  title={mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding},
+  author={Hu, Anwen and Xu, Haiyang and Ye, Jiabo and Yan, Ming and Zhang, Liang and Zhang, Bo and Li, Chen and Zhang, Ji and Jin, Qin and Huang, Fei and others},
+  journal={arXiv preprint arXiv:2403.12895},
+  year={2024}
+}
+```
 
-
-## Spotlights
-
-* Support struct-aware document parsing, table to markdown, chart to markdown.
-* Support multi-grained text recognition and text grounding
-* Support question answering with simple phrases or detailed explanations.
-
-* Coming soon
-    - [x] Training Data: DocStruct4M, DocReason25K, DocDownsteam-1.0
-    - [x] Mutli-grained Text Localization Evaluation set: DocLocal4K
-    - [ ] Model: DocOwl 1.5, DocOwl 1.5-Chat
-    - [ ] Source code.
-    - [ ] Online Demo on ModelScope.
-    - [ ] Online Demo on HuggingFace.
           
