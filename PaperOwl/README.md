@@ -91,3 +91,14 @@ For V100 32G
 ```
 bash scripts/train_it_v100.sh
 ```
+
+## Citation
+If you found this work useful, consider giving this repository a star and citing our paper as followed:
+```
+@article{hu2023paperowl,
+  title={mplug-paperowl: Scientific diagram analysis with the multimodal large language model},
+  author={Hu, Anwen and Shi, Yaya and Xu, Haiyang and Ye, Jiabo and Ye, Qinghao and Yan, Ming and Li, Chenliang and Qian, Qi and Zhang, Ji and Huang, Fei},
+  journal={arXiv preprint arXiv:2311.18248},
+  year={2023}
+}
+```
