@@ -148,13 +148,13 @@ Evaluate DocOwl1.5/DocOwl1.5-Chat on 10 downstream tasks:
 ```
 python docowl_benchmark_evaluate.py --model_path $MODEL_PATH --dataset $DATASET --downstream_dir $DOWNSTREAM_DIR_PATH --save_dir $SAVE_DIR
 ```
-Note: $DATASET should be chosen from [DocVQA, InfographicsVQA, WikiTableQuestions, DeepForm,KleisterCharity, TabFact, ChartQA, TextVQA, TextCaps, VisualMRC]. $DOWNSTREAM_DIR_PATH is the local path of [mPLUG/DocDownstream-1.0](https://huggingface.co/datasets/mPLUG/DocDownstream-1.0).
+Note: ```$DATASET``` should be chosen from ```[DocVQA, InfographicsVQA, WikiTableQuestions, DeepForm,KleisterCharity, TabFact, ChartQA, TextVQA, TextCaps, VisualMRC]```. ```$DOWNSTREAM_DIR_PATH``` is the local path of [mPLUG/DocDownstream-1.0](https://huggingface.co/datasets/mPLUG/DocDownstream-1.0).
 
 Evaluate DocOwl1.5-stage1 on DocLocal4K:
 ```
 python docowl_doclocal4k_evaluate.py --model_path $MODEL_PATH --task $TASK --doclocal4k_dir $DOCLOCAL4K_DIR_PATH --save_dir $SAVE_DIR
 ```
-Note: $TASK should be chosen from [text_grounding, text_recognition]. $DOCLOCAL4K_DIR_PATH is the local path of [mPLUG/DocLocal4K](https://huggingface.co/datasets/mPLUG/DocLocal4K).
+Note: ```$TASK``` should be chosen from ```[text_grounding, text_recognition]```. ```$DOCLOCAL4K_DIR_PATH``` is the local path of [mPLUG/DocLocal4K](https://huggingface.co/datasets/mPLUG/DocLocal4K).
 
 ### Model Training
 coming soon
