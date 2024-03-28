@@ -35,7 +35,7 @@ Anwen Hu, Haiyang Xu†, Jiabo Ye, Ming Yan†, Liang Zhang, Bo Zhang, Chen Li, 
 * Coming soon
     - [x] Training Data: DocStruct4M, DocReason25K, DocDownsteam-1.0
     - [x] Mutli-grained Text Localization Evaluation set: DocLocal4K
-    - [ ] Model: DocOwl 1.5, DocOwl 1.5-Chat
+    - [x] Model: DocOwl 1.5-stage1, DocOwl 1.5, DocOwl 1.5-Chat
     - [ ] Source code.
     - [ ] Online Demo on ModelScope.
     - [ ] Online Demo on HuggingFace.
@@ -106,9 +106,51 @@ DocLocal4K
 ├── text_recognition.jsonl
 ```
 
-## Model
-Coming soon...
+## Models
+### Model Card
+|  Model   | Download Link  | Abilities |
+|  ----  | ----  | ----  |
+| DocOwl1.5-stage1  |  [🤗 mPLUG/DocOwl1.5-stage1](https://huggingface.co/mPLUG/DocOwl1.5-stage1) | <li> document/webpage parsing <li> table to markdown <li> chart to markdown <li> natural image parsing <li> multi-grained text recognition <li> multi-grained text  grounding |
+| DocOwl1.5  |  [🤗 mPLUG/DocOwl1.5](https://huggingface.co/mPLUG/DocOwl1.5) | <li> VQA with concise answers <li> infomation extraction <li> image captioning <li> natural language inference |
+| DocOwl1.5-Chat  |  [🤗 mPLUG/DocOwl1.5-Chat](https://huggingface.co/mPLUG/DocOwl1.5-Chat) | <li> VQA with detailed explanations <li> VQA with concise answers <li> infomation extraction <li> image captioning <li> natural language inference |
+| DocOwl1.5-Chat+  |  coming soon | <li> document/webpage parsing <li> table to markdown <li> chart to markdown <li> natural image parsing <li> multi-grained text recognition <li> multi-grained text grounding <li> VQA with detailed explanations <li> VQA with concise answers <li> infomation extraction <li> image captioning <li> natural language inference |
 
+### Model Inference
+prepare python environments as [mPLUG-Owl2](https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2).
+```
+from docowl_infer import DocOwlInfer
+# e.g. model_path = './mPLUG/DocOwl1.5-Chat'
+model_path = $YOUR_LOCAL_MODEL_PATH
+docowl = DocOwlInfer(ckpt_path=model_path, anchors='grid_9', add_global_img=True)
+print('load model from ', model_path)
+image=$YOUR_IMAGE_PATH
+query=$YOUR_QUERY
+answer = docowl.inference(image, query)
+print(answer)
+```
+
+### Model Evaluation
+prepare environments for evaluation as follows:
+```
+pip install textdistance
+pip install editdistance
+pip install pycocoevalcap
+```
+
+Evaluate DocOwl1.5/DocOwl1.5-Chat on 10 downstream tasks:
+```
+python docowl_benchmark_evaluate.py --model_path $MODEL_PATH --dataset $DATASET --downstream_dir $DOWNSTREAM_DIR_PATH --save_dir $SAVE_DIR
+```
+Note: $DATASET should be chosen from [DocVQA, InfographicsVQA, WikiTableQuestions, DeepForm,KleisterCharity, TabFact, ChartQA, TextVQA, TextCaps, VisualMRC]. $DOWNSTREAM_DIR_PATH is the local path of [mPLUG/DocDownstream-1.0](https://huggingface.co/datasets/mPLUG/DocDownstream-1.0).
+
+Evaluate DocOwl1.5-stage1 on DocLocal4K:
+```
+python docowl_doclocal4k_evaluate.py --model_path $MODEL_PATH --task $TASK --doclocal4k_dir $DOCLOCAL4K_DIR_PATH --save_dir $SAVE_DIR
+```
+Note: $TASK should be chosen from [text_grounding, text_recognition]. $DOCLOCAL4K_DIR_PATH is the local path of [mPLUG/DocLocal4K](https://huggingface.co/datasets/mPLUG/DocLocal4K).
+
+### Model Training
+coming soon
 
 
 ## Citation
