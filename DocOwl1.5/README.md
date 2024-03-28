@@ -128,46 +128,46 @@ prepare python environments as [mPLUG-Owl2](https://github.com/X-PLUG/mPLUG-Owl/
 * DocOwl1.5-stage1 inference examples
 ```
 from docowl_infer import DocOwlInfer
-model_path = './mPLUG/DocOwl1.5-stage1'
-docowl = DocOwlInfer(ckpt_path=model_path, anchors='grid_9', add_global_img=False)
+model_path='./mPLUG/DocOwl1.5-stage1'
+docowl=DocOwlInfer(ckpt_path=model_path, anchors='grid_9', add_global_img=False)
 print('load model from ', model_path)
 
 # document/webpage parsing
 image='./DocStruct4M/val_imgs/CCpdf/pages/1e531ef22cff3f01dab8720e99427c4f_page19.png'
 query='Recognize text in the image.'
-answer = docowl.inference(image, query)
+answer=docowl.inference(image, query)
 print(answer)
 
 # table/chart to markdown
 image='./DocStruct4M/val_imgs/TURL/col_type_197091.jpg'
 query='Convert the picture to Markdown syntax.'
-answer = docowl.inference(image, query)
+answer=docowl.inference(image, query)
 print(answer)
 
 # natural image parsing
 image='./DocStruct4M/val_imgs/OCRCC/02749938.jpg'
-query=Provide a description of the image content and text.
-answer = docowl.inference(image, query)
+query='Provide a description of the image content and text.'
+answer=docowl.inference(image, query)
 print(answer)
 ```
 
 * DocOwl1.5-Chat inference examples
 ```
 from docowl_infer import DocOwlInfer
-model_path = './mPLUG/DocOwl1.5-chat'
-docowl = DocOwlInfer(ckpt_path=model_path, anchors='grid_9', add_global_img=True)
+model_path='./mPLUG/DocOwl1.5-chat'
+docowl=DocOwlInfer(ckpt_path=model_path, anchors='grid_9', add_global_img=True)
 print('load model from ', model_path)
 
 # VQA with concise phrases
 image='./DocDownstream-1.0/imgs/DUE_Benchmark/DocVQA/pngs/rnbx0223_193.png'
 query='What is the Compound Annual Growth Rate (CAGR) for total assets?'
-answer = docowl.inference(image, query)
+answer=docowl.inference(image, query)
 print(answer)
 
 # VQA with detailed explanation
 image='./DocDownstream-1.0/imgs/DUE_Benchmark/DocVQA/pngs/rnbx0223_193.png'
 query='What is the Compound Annual Growth Rate (CAGR) for total assets? Answer the question with detailed explanation.'
-answer = docowl.inference(image, query)
+answer=docowl.inference(image, query)
 print(answer)
 ```
 
