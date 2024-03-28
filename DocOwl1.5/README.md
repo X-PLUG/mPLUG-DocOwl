@@ -12,10 +12,17 @@ Anwen Hu, Haiyang Xu†, Jiabo Ye, Ming Yan†, Liang Zhang, Bo Zhang, Chen Li, 
 <a href="http://arxiv.org/abs/2403.12895"><img src="assets/Paper-Arxiv-orange.svg" ></a>
 </div>
 <div align="center">
+Data: 
 <a href="https://huggingface.co/datasets/mPLUG/DocStruct4M">DocStruct4M 🤗</a>
 <a href="https://huggingface.co/datasets/mPLUG/DocReason25K">DocReason25K 🤗</a>
 <a href="https://huggingface.co/datasets/mPLUG/DocDownstream-1.0">DocDownstream 🤗</a>
 <a href="https://huggingface.co/datasets/mPLUG/DocLocal4K">DocLocal4K 🤗</a>
+</div>
+<div align="center">
+Models:
+<a href="https://huggingface.co/mPLUG/DocOwl1.5-stage1">DocOwl1.5-stage1 🤗</a>
+<a href="https://huggingface.co/mPLUG/DocOwl1.5">DocOwl1.5 🤗</a>
+<a href="https://huggingface.co/mPLUG/DocOwl1.5-Chat">DocOwl1.5-Chat 🤗</a>
 </div>
 
 
