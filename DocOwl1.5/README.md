@@ -43,7 +43,7 @@ Models:
     - [x] Training Data: DocStruct4M, DocReason25K, DocDownsteam-1.0
     - [x] Mutli-grained Text Localization Evaluation set: DocLocal4K
     - [x] Model: DocOwl 1.5-stage1, DocOwl 1.5, DocOwl 1.5-Chat
-    - [ ] Source code.
+    - [x] Source code.
     - [ ] Online Demo on ModelScope.
     - [ ] Online Demo on HuggingFace.
 
