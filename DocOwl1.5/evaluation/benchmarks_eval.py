@@ -1,9 +1,6 @@
 import jsonlines
 import json
 from icecream import ic
-import sys
-sys.path.append('/nas-alinlp/anwenhu/code/mPLUG_github/mPLUG-DocOwl1.5/evaluation')
-print(sys.path)
 import re
 from evaluator import doc_evaluate
 import os
