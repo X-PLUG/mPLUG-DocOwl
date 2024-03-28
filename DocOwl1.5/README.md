@@ -128,6 +128,7 @@ prepare python environments as [mPLUG-Owl2](https://github.com/X-PLUG/mPLUG-Owl/
 from docowl_infer import DocOwlInfer
 # e.g. model_path = './mPLUG/DocOwl1.5-Chat'
 model_path = $YOUR_LOCAL_MODEL_PATH
+# set add_global_img=False when using DocOwl1.5-stage1
 docowl = DocOwlInfer(ckpt_path=model_path, anchors='grid_9', add_global_img=True)
 print('load model from ', model_path)
 image=$YOUR_IMAGE_PATH
