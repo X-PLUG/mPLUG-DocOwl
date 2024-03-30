@@ -16,7 +16,7 @@ Alibaba Group
 <a href="https://arxiv.org/abs/2311.18248"><img src="assets/Paper-Arxiv-orange.svg" ></a>
 <p></div>
 <div align="center">
-<a href="https://huggingface.co/datasets/mPLUG/M-Paper">M-Paper 🤗</a></div>
+M-Paper<a href="https://huggingface.co/datasets/mPLUG/M-Paper">🤗</a><a href="https://www.modelscope.cn/datasets/iic/M-Paper/"><img src="../assets/modelscope.png" width='20'></a></div>
 <div align="center">
 <img src="assets/intro_case.jpeg" alt="image" width="50%" height="auto">
 </div>
@@ -30,7 +30,7 @@ M-Paper is a Scientific Diagram Analysis dataset based on 48k high-quality arxiv
 The construction pipeline of M-Paper is as follows:
 ![images](assets/data_process.png)
 
-Download M-Paper dataset from huggingface [mPLUG/M-Paper](https://huggingface.co/datasets/mPLUG/M-Paper). High-resolution images (~639G) are split into 16 files, run following cmds to prepare images.
+Download M-Paper dataset from huggingface [mPLUG/M-Paper](https://huggingface.co/datasets/mPLUG/M-Paper) or modelscope [iic/M-Paper](https://www.modelscope.cn/datasets/iic/M-Paper). High-resolution images (~639G) are split into 16 files, run following cmds to prepare images.
 ```
 cat partial-imgs* > imgs.tar.gz
 tar -zxvf imgs.tar.gz
