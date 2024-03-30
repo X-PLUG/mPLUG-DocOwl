@@ -13,10 +13,11 @@ Anwen Hu, Haiyang Xu†, Jiabo Ye, Ming Yan†, Liang Zhang, Bo Zhang, Chen Li, 
 </div>
 <div align="center">
 Data: 
-<a href="https://huggingface.co/datasets/mPLUG/DocStruct4M">DocStruct4M 🤗</a>
-<a href="https://huggingface.co/datasets/mPLUG/DocReason25K">DocReason25K 🤗</a>
-<a href="https://huggingface.co/datasets/mPLUG/DocDownstream-1.0">DocDownstream 🤗</a>
-<a href="https://huggingface.co/datasets/mPLUG/DocLocal4K">DocLocal4K 🤗</a>
+DocStruct4M 
+<a href="https://huggingface.co/datasets/mPLUG/DocStruct4M">🤗</a><a href="https://www.modelscope.cn/datasets/iic/DocStruct4M/"> <img src="assets/modelscope.png" width='20'></a>
+DocReason25K <a href="https://huggingface.co/datasets/mPLUG/DocReason25K">🤗</a><a href="https://www.modelscope.cn/datasets/iic/DocReason25K/"> <img src="assets/modelscope.png" width='20'></a>
+DocDownstream <a href="https://huggingface.co/datasets/mPLUG/DocDownstream-1.0">🤗</a><a href="https://www.modelscope.cn/datasets/iic/DocDownstream-1.0/"> <img src="assets/modelscope.png" width='20'></a>
+DocLocal4K <a href="https://huggingface.co/datasets/mPLUG/DocLocal4K">🤗</a><a href="https://www.modelscope.cn/datasets/iic/DocLocal4K/"> <img src="assets/modelscope.png" width='20'></a>
 </div>
 <div align="center">
 Models:
@@ -48,6 +49,13 @@ Models:
     - [ ] Online Demo on HuggingFace.
 
 ## Training and Evaluation Datasets
+|  Dataset   | Download Link |
+|  ----  | ----  | 
+|  DocStruct4M   | <li>[HuggingFace: mPLUG/DocStruct4M](https://huggingface.co/datasets/mPLUG/DocStruct4M) <li> [ModelScope: iic/DocStruct4M](https://www.modelscope.cn/datasets/iic/DocStruct4M)|
+|  DocDownstream-1.0   | <li>[HuggingFace: mPLUG/DocDownstream-1.0](https://huggingface.co/datasets/mPLUG/DocDownstream-1.0) <li> [ModelScope: iic/DocDownstream-1.0](https://www.modelscope.cn/datasets/iic/DocDownstream-1.0)|
+|  DocReason25K   | <li>[HuggingFace: mPLUG/DocReason25K](https://huggingface.co/datasets/mPLUG/DocReason25K) <li> [ModelScope: iic/DocReason25K](https://www.modelscope.cn/datasets/iic/DocReason25K)|
+|  DocLocal4K   | <li>[HuggingFace: mPLUG/DocLocal4K](https://huggingface.co/datasets/mPLUG/DocLocal4K) <li> [ModelScope: iic/DocLocal4K](https://www.modelscope.cn/datasets/iic/DocLocal4K)|
+
 
 ### DocStruct4M
 DocStruct4M is a training set for Unified Structure Learning, covering images of documents, webpages, tables, charts and natural images. It consists of ~3M samples for Struct-aware Parsing tasks and ~1M samples for Multi-grained Text Localization tasks. 
