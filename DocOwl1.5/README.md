@@ -24,6 +24,7 @@ Models:
 DocOwl1.5-stage1 <a href="https://huggingface.co/mPLUG/DocOwl1.5-stage1">🤗</a><a href="https://www.modelscope.cn/models/iic/DocOwl1.5-stage1/"> <img src="assets/modelscope.png" width='20'></a>
 DocOwl1.5 <a href="https://huggingface.co/mPLUG/DocOwl1.5">🤗</a><a href="https://www.modelscope.cn/models/iic/DocOwl1.5/"> <img src="assets/modelscope.png" width='20'></a>
 DocOwl1.5-Chat <a href="https://huggingface.co/mPLUG/DocOwl1.5-Chat">🤗</a><a href="https://www.modelscope.cn/models/iic/DocOwl1.5-Chat/"> <img src="assets/modelscope.png" width='20'></a>
+DocOwl1.5-Omni <a href="https://huggingface.co/mPLUG/DocOwl1.5-Omni">🤗</a><a href="https://www.modelscope.cn/models/iic/DocOwl1.5-Omni/"> <img src="assets/modelscope.png" width='20'></a>
 </div>
 
 
@@ -128,7 +129,7 @@ DocLocal4K
 | DocOwl1.5-stage1  | <li> 🤗[ mPLUG/DocOwl1.5-stage1](https://huggingface.co/mPLUG/DocOwl1.5-stage1) <li> <img src="assets/modelscope.png" width='20'> [iic/DocOwl1.5-stage1](https://www.modelscope.cn/models/iic/DocOwl1.5-stage1/) | <li> document/webpage parsing <li> table to markdown <li> chart to markdown <li> natural image parsing <li> multi-grained text recognition <li> multi-grained text  grounding |
 | DocOwl1.5  | <li> 🤗 [mPLUG/DocOwl1.5](https://huggingface.co/mPLUG/DocOwl1.5) <li> <img src="assets/modelscope.png" width='20'> [iic/DocOwl1.5](https://www.modelscope.cn/models/iic/DocOwl1.5/) | <li> VQA with concise answers <li> infomation extraction <li> image captioning <li> natural language inference |
 | DocOwl1.5-Chat  | <li> 🤗 [mPLUG/DocOwl1.5-Chat](https://huggingface.co/mPLUG/DocOwl1.5-Chat) <li> <img src="assets/modelscope.png" width='20'> [iic/DocOwl1.5-Chat](https://www.modelscope.cn/models/iic/DocOwl1.5-Chat/) | <li> VQA with detailed explanations <li> VQA with concise answers <li> infomation extraction <li> image captioning <li> natural language inference |
-| DocOwl1.5-Chat+  |  coming soon | <li> document/webpage parsing <li> table to markdown <li> chart to markdown <li> natural image parsing <li> multi-grained text recognition <li> multi-grained text grounding <li> VQA with detailed explanations <li> VQA with concise answers <li> infomation extraction <li> image captioning <li> natural language inference |
+| DocOwl1.5-Omni  |  <li> 🤗 [mPLUG/DocOwl1.5-Omni](https://huggingface.co/mPLUG/DocOwl1.5-Omni) <li> <img src="assets/modelscope.png" width='20'> [iic/DocOwl1.5-Omni](https://www.modelscope.cn/models/iic/DocOwl1.5-Omni/) | <li> document/webpage parsing <li> table to markdown <li> chart to markdown <li> natural image parsing <li> multi-grained text recognition <li> multi-grained text grounding <li> VQA with detailed explanations <li> VQA with concise answers <li> infomation extraction <li> image captioning <li> natural language inference |
 
 ### Model Inference
 prepare python environments as [mPLUG-Owl2](https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2).
