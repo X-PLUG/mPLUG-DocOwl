@@ -12,6 +12,7 @@ for OCR-free Document Understanding<h2>
 
 
 ## News
+* 🔥🔥 [2024.3.29] We build a demo of DocOwl1.5 on [ModelScope](https://modelscope.cn/studios/iic/mPLUG-DocOwl/), supported by the DocOwl1.5-Omni.
 * 🔥[2024.3.28] We release the training data (DocStruct4M, DocDownstream-1.0, DocReason25K), codes and models (DocOwl1.5-stage1, DocOwl1.5, DocOwl1.5-Chat, DocOwl1.5-Omni) of [mPLUG-DocOwl 1.5](./DocOwl1.5/) on both **HuggingFace** 🤗 and **ModelScope** <img src="./assets/modelscope.png" width='20'>.
 * [2024.3.20] We release the arxiv paper of [mPLUG-DocOwl 1.5](http://arxiv.org/abs/2403.12895), a SOTA 8B Multimodal LLM on OCR-free Document Understanding (DocVQA 82.2, InfoVQA 50.7, ChartQA 70.2, TextVQA 68.6).
 * [2024.01.13] Our Scientific Diagram Analysis dataset [M-Paper](https://github.com/X-PLUG/mPLUG-DocOwl/tree/main/PaperOwl) has been available on both **HuggingFace** 🤗 and **ModelScope** <img src="./assets/modelscope.png" width='20'>, containing 447k high-resolution diagram images and corresponding paragraph analysis.
@@ -30,20 +31,20 @@ for OCR-free Document Understanding<h2>
 
 - [**mPLUG-DocOwl**](./DocOwl/) (Arxiv 2023) - mPLUG-DocOwl: Modularized Multimodal Large Language Model for Document Understanding
 
+## Online Demo
+
+### ModelScope (supported by DocOwl1.5-Omni)
+<a href="https://modelscope.cn/studios/iic/mPLUG-DocOwl/summary"><img src="https://modelscope.oss-cn-beijing.aliyuncs.com/modelscope.gif" width="250"/></a>
+
+### HuggingFace
+Coming soon... 
+
 
 ## Cases
 
 ![images](assets/docowl1.5_chat_case.png)
 
   
-## Online Demo
-
-### mPLUG-DocOwl ModelScope
-<a href="https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary"><img src="https://modelscope.oss-cn-beijing.aliyuncs.com/modelscope.gif" width="250"/></a>
-
-### mPLUG-DocOwl 1.5 ModelScope/HuggingFace
-Coming soon... 
-
 
 ## Related Projects
 
