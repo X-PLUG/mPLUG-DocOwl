@@ -41,6 +41,9 @@ for OCR-free Document Understanding<h2>
 ### mPLUG-DocOwl ModelScope
 <a href="https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary"><img src="https://modelscope.oss-cn-beijing.aliyuncs.com/modelscope.gif" width="250"/></a>
 
+### mPLUG-DocOwl 1.5 ModelScope/HuggingFace
+Coming soon... 
+
 
 ## Related Projects
 
