@@ -32,7 +32,7 @@ for OCR-free Document Understanding<h2>
 - [**mPLUG-DocOwl**](./DocOwl/) (Arxiv 2023) - mPLUG-DocOwl: Modularized Multimodal Large Language Model for Document Understanding
 
 ## Online Demo
-
+Note: The demo of HuggingFace is not as stable as ModelScope because the GPU in ZeroGPU Spaces of HuggingFace is dynamically assigned.
 ### ModelScope 
 <a href="https://modelscope.cn/studios/iic/mPLUG-DocOwl/summary"><img src="https://modelscope.oss-cn-beijing.aliyuncs.com/modelscope.gif" width="250"/></a>
 
