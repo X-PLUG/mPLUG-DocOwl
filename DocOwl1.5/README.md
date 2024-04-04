@@ -41,13 +41,21 @@ DocOwl1.5-Omni <a href="https://huggingface.co/mPLUG/DocOwl1.5-Omni">🤗</a><a 
 * Support multi-grained text recognition and text grounding
 * Support question answering with simple phrases or detailed explanations.
 
-* Coming soon
+* Open Source
     - [x] Training Data: DocStruct4M, DocReason25K, DocDownsteam-1.0
     - [x] Mutli-grained Text Localization Evaluation set: DocLocal4K
     - [x] Model: DocOwl 1.5-stage1, DocOwl 1.5, DocOwl 1.5-Chat
     - [x] Source code.
-    - [ ] Online Demo on ModelScope.
-    - [ ] Online Demo on HuggingFace.
+    - [x] Online Demo on ModelScope.
+    - [x] Online Demo on HuggingFace.
+
+* Coming soon
+    - [ ] Training code.
+
+## Demos
+🤗 [HuggingFace Space](https://huggingface.co/spaces/mPLUG/DocOwl)
+
+<img src="assets/modelscope.png" width='20'> [ModelScope Space](https://modelscope.cn/studios/iic/mPLUG-DocOwl/) 
 
 ## Training and Evaluation Datasets
 |  Dataset   | Download Link |
