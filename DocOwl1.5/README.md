@@ -132,7 +132,7 @@ DocLocal4K
 | DocOwl1.5-Omni  |  <li> 🤗 [mPLUG/DocOwl1.5-Omni](https://huggingface.co/mPLUG/DocOwl1.5-Omni) <li> <img src="assets/modelscope.png" width='20'> [iic/DocOwl1.5-Omni](https://www.modelscope.cn/models/iic/DocOwl1.5-Omni/) | <li> document/webpage parsing <li> table to markdown <li> chart to markdown <li> natural image parsing <li> multi-grained text recognition <li> multi-grained text grounding <li> VQA with detailed explanations <li> VQA with concise answers <li> infomation extraction <li> image captioning <li> natural language inference |
 
 ### Model Inference
-prepare python environments as [mPLUG-Owl2](https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2).
+prepare python environments as [mPLUG-Owl2](https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2). Versions of some important packages are: ```transformers==4.31.0```
 
 * DocOwl1.5-stage1 inference examples
 ```
