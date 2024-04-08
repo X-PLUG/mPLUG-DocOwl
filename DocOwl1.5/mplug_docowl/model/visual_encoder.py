@@ -484,8 +484,8 @@ class MplugDocOwlHReducerModel(PreTrainedModel):
         hidden_states = self.reducer_before(encoder_hidden_states) # B 4D H W/4
         ## reduce seq length with a conv layer
         hidden_states = rearrange(hidden_states, 'B (X D) H W -> B D H (W X)', X=self.conv_patch) # B 4D H W/4 -> B D H W
-        sequence_output = self.reducer(hidden_states) # B,C,H,W -> B,C,H/conv_shape[1],W/(conv_shape[1])
-        sequence_output = sequence_output.flatten(2).transpose(1, 2)  # B,C,H/conv_shape[1],W/(conv_shape[1]) -> B,C,L/conv_patch -> B,L/conv_patch,C
+        sequence_output = self.reducer(hidden_states) # B,C,H,W -> B,C,H/conv_shape[0],W/(conv_shape[1])
+        sequence_output = sequence_output.flatten(2).transpose(1, 2)  # B,C,H/conv_shape[0],W/(conv_shape[1]) -> B,C,L/conv_patch -> B,L/conv_patch,C
         sequence_output = sequence_output.transpose(0, 1).contiguous() # L/conv_patch, B, C
         ## align visual features with language embedding with fc
         sequence_output = self.visual_fc(sequence_output) # L/conv_patch, B, h
