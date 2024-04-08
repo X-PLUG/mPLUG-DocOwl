@@ -44,7 +44,7 @@ DocOwl1.5-Omni <a href="https://huggingface.co/mPLUG/DocOwl1.5-Omni">🤗</a><a 
 * Open Source
     - ✅ Training Data: DocStruct4M, DocReason25K, DocDownsteam-1.0
     - ✅ Mutli-grained Text Localization Evaluation set: DocLocal4K
-    - ✅ Model: DocOwl 1.5-stage1, DocOwl 1.5, DocOwl 1.5-Chat
+    - ✅ Model: DocOwl1.5-stage1, DocOwl1.5, DocOwl1.5-Chat, DocOwl1.5-Omni
     - ✅ Source code of model inference and evaluation.
     - ✅ Online Demo on ModelScope and HuggingFace.
     - ✅ Source code of launching a local demo.
