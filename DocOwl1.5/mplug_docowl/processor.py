@@ -181,11 +181,14 @@ class DocProcessor():
     def __call__(self, images=None, query=None):
         assert images is not None
 
-        if isinstance(images, str):
+        if not isinstance(images, list):
             images = [images]
         image_pils = []
-        for image_url in images:
-            image = Image.open(image_url).convert('RGB')
+        for image in images:
+            if isinstance(image, str):
+                image = Image.open(image).convert('RGB')
+            else:
+                image = image.convert('RGB')
             # ic(image.size)
             image_pils.append(image)
 

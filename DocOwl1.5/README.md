@@ -42,12 +42,12 @@ DocOwl1.5-Omni <a href="https://huggingface.co/mPLUG/DocOwl1.5-Omni">🤗</a><a 
 * Support question answering with simple phrases or detailed explanations.
 
 * Open Source
-    - [x] Training Data: DocStruct4M, DocReason25K, DocDownsteam-1.0
-    - [x] Mutli-grained Text Localization Evaluation set: DocLocal4K
-    - [x] Model: DocOwl 1.5-stage1, DocOwl 1.5, DocOwl 1.5-Chat
-    - [x] Source code.
-    - [x] Online Demo on ModelScope.
-    - [x] Online Demo on HuggingFace.
+    - ✅ Training Data: DocStruct4M, DocReason25K, DocDownsteam-1.0
+    - ✅ Mutli-grained Text Localization Evaluation set: DocLocal4K
+    - ✅ Model: DocOwl 1.5-stage1, DocOwl 1.5, DocOwl 1.5-Chat
+    - ✅ Source code of model inference and evaluation.
+    - ✅ Online Demo on ModelScope and HuggingFace.
+    - ✅ Source code of launching a local demo.
 
 * Coming soon
     - [ ] Training code.
@@ -210,6 +210,14 @@ Note: ```$TASK``` should be chosen from ```[text_grounding, text_recognition]```
 
 ### Model Training
 coming soon
+
+
+## Local Demo
+Run the following command to launch a local demo supported by the DocOwl1.5-Omni:
+```
+python app.py --model-source modelscope
+```
+Note: The demo is build based on ```gradio==3.27.0```. You can also change ```model-source``` to ```huggingface```, or ```local``` and specify the ```model-path```. We have verified that the local demo works on A100-80G or V100-32G.
 
 
 ## Citation
