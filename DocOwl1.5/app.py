@@ -14,6 +14,7 @@ from mplug_docowl.utils import (build_logger, server_error_msg,
     violates_moderation, moderation_msg)
 from model_worker import ModelWorker
 import hashlib
+from icecream import ic
 
 
 logger = build_logger("gradio_web_server_local", "gradio_web_server_local.log")
@@ -137,6 +138,9 @@ def http_bot(state, temperature, top_p, max_new_tokens, request: gr.Request):
     prompt = state.get_prompt()
 
     all_images = state.get_images(return_pil=True)
+    # debug
+    """for image in all_images:
+        ic(image.size)"""
     all_image_hash = [hashlib.md5(image.tobytes()).hexdigest() for image in all_images]
     for image, hash in zip(all_images, all_image_hash):
         t = datetime.datetime.now()
@@ -223,7 +227,6 @@ title_markdown = ("""
 <h5 align="center"> 注意: 如果你想要详细的推理解释, 请在问题后面加上“Give a detailed explanation.”。</h2>
 
 
-
 <div align="center">
     <div style="display:flex; gap: 0.25rem;" align="center">
         <a href='https://github.com/X-PLUG/mPLUG-DocOwl'><img src='https://img.shields.io/badge/Github-Code-blue'></a>
@@ -255,6 +258,10 @@ block_css = """
     min-width: min(120px,100%);
 }
 
+.bot {
+  white-space: break-spaces;
+}
+
 """
 
 def build_demo(embed_mode):
@@ -269,9 +276,11 @@ def build_demo(embed_mode):
             with gr.Column(scale=3):
                 imagebox = gr.Image(type="pil")
                 image_process_mode = gr.Radio(
-                    ["Crop", "Resize", "Pad", "Default"],
+                    # ["Crop", "Resize", "Pad", "Default"],
+                    [],
                     value="Default",
                     label="Preprocess for non-square image", visible=False)
+                
 
                 cur_dir = os.path.dirname(os.path.abspath(__file__))
                 gr.Examples(examples=[
@@ -390,6 +399,8 @@ if __name__ == "__main__":
         choices=["once", "reload"])
     parser.add_argument("--model-source", type=str, default="modelscope",
         choices=["local", "modelscope", "huggingface"])
+    parser.add_argument("--model-version", type=str, default="Omni", 
+        choices=['stage1', 'Chat','Omni'])
     parser.add_argument("--model-path", type=str, default="iic/DocOwl1___5-Omni")
     parser.add_argument("--device", type=str, default="cuda")
     parser.add_argument("--load-8bit", action="store_true")
@@ -402,13 +413,13 @@ if __name__ == "__main__":
     if args.model_source == 'modelscope':
         # download model from modelscope
         from modelscope.hub.snapshot_download import snapshot_download
-        model_dir = snapshot_download('iic/DocOwl1.5-Omni', cache_dir='./')
-        args.model_path = 'iic/DocOwl1___5-Omni'
+        model_dir = snapshot_download('iic/DocOwl1.5-'+args.model_version, cache_dir='./')
+        args.model_path = 'iic/DocOwl1___5-'+args.model_version
     elif args.model_source == 'huggingface':
         # download model from huggingface
         from huggingface_hub import snapshot_download
-        model_dir = snapshot_download('mPLUG/DocOwl1.5-Omni', cache_dir='./')
-        args.model_path = 'mPLUG/DocOwl1.5-Omni'
+        model_dir = snapshot_download('mPLUG/DocOwl1.5-'+args.model_version, cache_dir='./')
+        args.model_path = 'mPLUG/DocOwl1.5-'+args.model_version
 
     print(os.listdir('./'))
 

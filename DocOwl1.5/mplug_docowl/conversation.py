@@ -144,22 +144,24 @@ class Conversation:
                         image = expand2square(image)
                     elif image_process_mode in ["Default", "Crop"]:
                         pass
-                    elif image_process_mode == "Resize":
+                    elif image_process_mode == "Resize336":
                         image = image.resize((336, 336))
+                    elif image_process_mode == "Resize":
+                        max_hw, min_hw = max(image.size), min(image.size)
+                        aspect_ratio = max_hw / min_hw
+                        max_len, min_len = 800, 400
+                        shortest_edge = int(min(max_len / aspect_ratio, min_len, min_hw))
+                        longest_edge = int(shortest_edge * aspect_ratio)
+                        W, H = image.size
+                        if longest_edge != max(image.size):
+                            if H > W:
+                                H, W = longest_edge, shortest_edge
+                            else:
+                                H, W = shortest_edge, longest_edge
+                            image = image.resize((W, H))
                     else:
                         raise ValueError(f"Invalid image_process_mode: {image_process_mode}")
-                    max_hw, min_hw = max(image.size), min(image.size)
-                    aspect_ratio = max_hw / min_hw
-                    max_len, min_len = 800, 400
-                    shortest_edge = int(min(max_len / aspect_ratio, min_len, min_hw))
-                    longest_edge = int(shortest_edge * aspect_ratio)
-                    W, H = image.size
-                    if longest_edge != max(image.size):
-                        if H > W:
-                            H, W = longest_edge, shortest_edge
-                        else:
-                            H, W = shortest_edge, longest_edge
-                        image = image.resize((W, H))
+                    
                     if return_pil:
                         images.append(image)
                     else:
