@@ -217,7 +217,7 @@ Run the following command to launch a local demo supported by the DocOwl1.5-Omni
 ```
 python app.py --model-source modelscope
 ```
-Note: The demo is build based on ```gradio==3.27.0```. You can also change ```model-source``` to ```huggingface```, or ```local``` and specify the ```model-path```. We have verified that the local demo works on A100-80G or V100-32G.
+Note: The demo is build based on ```gradio==3.27.0```, if you must use ```gradio==4.26.0```, you can refer to our code on HuggingFace space by ```git clone https://huggingface.co/spaces/mPLUG/DocOwl``` . You can also change ```model-source``` to ```huggingface```, or ```local``` and specify the ```model-path```. We have verified that the local demo works on A100-80G or V100-32G.
 
 
 ## Citation
