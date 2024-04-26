@@ -14,6 +14,13 @@ Liang Zhang*, Anwen Hu*, Haiyang Xu, Ming Yan, Yichen Xu, Qin Jin†, Ji Zhang, 
 <a href="https://arxiv.org/abs/2404.16635"><img src="assets/Paper-Arxiv-orange.svg" ></a>
 </div>
 
+<hr>
+<div align="center">
+<img src="assets/perform_and_speed.png" alt="image" width="50%" height="auto">
+<img src="assets/cases.png" alt="image" width="50%" height="auto">
+</div>
+</p>
+
 ## Spotlights
 
 * Support chart question answering with both simple direct answers and step-by-step Python programs.
@@ -54,5 +61,3 @@ If you found this work useful, consider giving this repository a star and citing
     primaryClass={cs.CV}
 }
 ```
-
-          
