@@ -16,8 +16,7 @@ Liang Zhang*, Anwen Hu*, Haiyang Xu, Ming Yan, Yichen Xu, Qin Jin†, Ji Zhang, 
 
 <hr>
 <div align="center">
-<img src="assets/perform_and_speed.png" alt="image" width="50%" height="auto">
-<img src="assets/cases.png" alt="image" width="50%" height="auto">
+<img src="assets/perform_and_speed.png" alt="image" width="100%" height="auto">
 </div>
 </p>
 
@@ -25,6 +24,10 @@ Liang Zhang*, Anwen Hu*, Haiyang Xu, Ming Yan, Yichen Xu, Qin Jin†, Ji Zhang, 
 
 * Support chart question answering with both simple direct answers and step-by-step Python programs.
 * Support chart-to-table extraction, chart summary generation, and chart redrawing.
+* Examples:
+<div align="center">
+<img src="assets/cases.png" alt="image" width="100%" height="auto">
+</div>
 
 * Coming soon
     - [ ] Model: TinyChart
