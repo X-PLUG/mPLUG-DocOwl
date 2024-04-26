@@ -26,6 +26,9 @@ for OCR-free Document Understanding<h2>
 ## Models
 - [**mPLUG-DocOwl1.5**](./DocOwl1.5/) (Arxiv 2024) - mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding
 
+- [**TinyChart**](./TinyChart/) (Arxiv 2024) - TinyChart: Efficient Chart Understanding with
+Visual Token Merging and Program-of-Thoughts Learning
+
 - [**mPLUG-PaperOwl**](./PaperOwl/) (Arxiv 2023) - mPLUG-PaperOwl: Scientific Diagram Analysis with the Multimodal Large Language Model
 
 - [**UReader**](./UReader/) (EMNLP 2023) - UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model
