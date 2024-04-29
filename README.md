@@ -12,7 +12,7 @@ for OCR-free Document Understanding<h2>
 
 
 ## 📢 News
-* 🔥🔥🔥 [2024.4.26] We release the arxiv paper of [TinyChart](https://arxiv.org/abs/2404.16635), a SOTA 3B Multimodal LLM for Chart Understanding (ChartQA: 83.6 > Gemin-Ultra 80.8 > GPT4V 78.5). The demo of TinyChart is available on [HuggingFace](https://huggingface.co/spaces/mPLUG/TinyChart-3B) 🤗. Both codes, models and data are released in [TinyChart](./TinyChart/).
+* 🔥🔥🔥 [2024.4.26] We release the arxiv paper of [TinyChart](https://arxiv.org/abs/2404.16635), a SOTA 3B Multimodal LLM for Chart Understanding with Program-of-Throught ability (ChartQA: 83.6 > Gemin-Ultra 80.8 > GPT4V 78.5). The demo of TinyChart is available on [HuggingFace](https://huggingface.co/spaces/mPLUG/TinyChart-3B) 🤗. Both codes, models and data are released in [TinyChart](./TinyChart/).
 * 🔥🔥🔥 [2024.4.3] We build demos of DocOwl1.5 on both [ModelScope](https://modelscope.cn/studios/iic/mPLUG-DocOwl/) <img src="./assets/modelscope.png" width='20'> and [HuggingFace](https://huggingface.co/spaces/mPLUG/DocOwl) 🤗, supported by the DocOwl1.5-Omni. The source codes of launching a local demo are also released in [DocOwl1.5](./DocOwl1.5/).
 * 🔥🔥 [2024.3.28] We release the training data (DocStruct4M, DocDownstream-1.0, DocReason25K), codes and models (DocOwl1.5-stage1, DocOwl1.5, DocOwl1.5-Chat, DocOwl1.5-Omni) of [mPLUG-DocOwl 1.5](./DocOwl1.5/) on both **HuggingFace** 🤗 and **ModelScope** <img src="./assets/modelscope.png" width='20'>.
 * 🔥 [2024.3.20] We release the arxiv paper of [mPLUG-DocOwl 1.5](http://arxiv.org/abs/2403.12895), a SOTA 8B Multimodal LLM on OCR-free Document Understanding (DocVQA 82.2, InfoVQA 50.7, ChartQA 70.2, TextVQA 68.6).
