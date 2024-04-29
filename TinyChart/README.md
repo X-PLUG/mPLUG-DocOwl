@@ -24,11 +24,13 @@ Liang Zhang*, Anwen Hu*, Haiyang Xu, Ming Yan, Yichen Xu, Qin Jin†, Ji Zhang, 
 
 * Support chart question answering with both simple direct answers and step-by-step Python programs.
 * Support chart-to-table extraction, chart summary generation, and chart redrawing.
+* Available
+    - ✅ Model: TinyChart
+    - ✅ Inference code.
+    - ✅ Code of launching a local demo.
+    - ✅ Online demo on HuggingFace.
 * Coming soon
-    - [x] Model: TinyChart
-    - [x] Inference code.
-    - [x] Code of launching a local demo.
-    - [x] Online demo on HuggingFace.
+    - [ ] Online demo on ModelScope.
     - [ ] Evaluation code.
     - [ ] Training data and code.
 
