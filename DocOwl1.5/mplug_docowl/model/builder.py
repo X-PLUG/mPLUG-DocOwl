@@ -68,10 +68,10 @@ def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, l
             tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
             model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
 
-
     # vision_tower = model.get_model().vision_model
     # vision_tower.to(device=device, dtype=torch.float16)
-    image_processor = CLIPImageProcessor.from_pretrained(model_path)
+    # image_processor = CLIPImageProcessor.from_pretrained(model_path)
+    image_processor = None
 
     if hasattr(model.config, "max_sequence_length"):
         context_len = model.config.max_sequence_length

@@ -37,12 +37,13 @@ Visual Token Merging and Program-of-Thoughts Learning
 
 ## 📺 Online Demo
 Note: The demo of HuggingFace is not as stable as ModelScope because the GPU in ZeroGPU Spaces of HuggingFace is dynamically assigned.
-- ### 📖 DocOwl 1.5
-<a href="https://modelscope.cn/studios/iic/mPLUG-DocOwl/summary"><img src="https://modelscope.oss-cn-beijing.aliyuncs.com/modelscope.gif" width="150"/></a><a href="https://huggingface.co/spaces/mPLUG/DocOwl"><img src="./assets/huggingface.png" width="150"/></a>
+### 📖 DocOwl 1.5
+- 🤗 [HuggingFace Space](https://huggingface.co/spaces/mPLUG/DocOwl)
 
-- ### 📈 TinyChart-3B
-<a href="https://huggingface.co/spaces/mPLUG/TinyChart-3B"><img src="./assets/huggingface.png" width="150"/></a>
+- <img src="assets/modelscope.png" width='20'> [ModelScope Space](https://modelscope.cn/studios/iic/mPLUG-DocOwl/) 
 
+### 📈 TinyChart-3B
+- 🤗 [HuggingFace Space](https://huggingface.co/spaces/mPLUG/TinyChart-3B)
 
 
 ## 🌰 Cases

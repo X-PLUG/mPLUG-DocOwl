@@ -48,9 +48,7 @@ DocOwl1.5-Omni <a href="https://huggingface.co/mPLUG/DocOwl1.5-Omni">🤗</a><a 
     - ✅ Source code of model inference and evaluation.
     - ✅ Online Demo on ModelScope and HuggingFace.
     - ✅ Source code of launching a local demo.
-
-* Coming soon
-    - [ ] Training code.
+    - ✅ Training code.
 
 ## Demos
 🤗 [HuggingFace Space](https://huggingface.co/spaces/mPLUG/DocOwl)
@@ -209,7 +207,16 @@ python docowl_doclocal4k_evaluate.py --model_path $MODEL_PATH --task $TASK --doc
 Note: ```$TASK``` should be chosen from ```[text_grounding, text_recognition]```. ```$DOCLOCAL4K_DIR_PATH``` is the local path of [mPLUG/DocLocal4K](https://huggingface.co/datasets/mPLUG/DocLocal4K).
 
 ### Model Training
-coming soon
+You can further finetune your own models based on DocOwl 1.5 models.
+1. Prepare a training jsonl file, organize each training sample in the same format as follows:
+
+  ```{"image": ["./imgs/DUE_Benchmark/DocVQA/pngs/xnbl0037_1.png"], "messages": [{"role": "user", "content": "<|image|>what is the date mentioned in this letter?"}, {"role": "assistant", "content": "1/8/93"}], "task_name": "qa_sft", "dataset_name": "DocVQA"}```
+
+2. Modify parameters in ```./scripts/finetune_docowl.sh``` according to your personal needs. ```./scripts/finetune_docowl.sh``` provides an example of finetuning DocDownstream-1.0 based on DocOwl1.5-stage1.
+
+3. Run ````bash ./scripts/finetune_docowl.sh```
+
+Note: Our DocOwl 1.5 is trained with Megatron. We additionaly build training codes supported by DeepSpeed for open-sourcing. We have tested the training scripts runs well on A100-80g with zero2. But We meet deadlock issues when using zero3. If you are willing to share any ideas about how to fix the deadlock issues of zero3, we will appreciate very much!
 
 
 ## Local Demo
@@ -217,7 +224,7 @@ Run the following command to launch a local demo supported by the DocOwl1.5-Omni
 ```
 python app.py --model-source modelscope
 ```
-Note: The demo is build based on ```gradio==3.27.0```, if you must use ```gradio==4.26.0```, you can refer to our code on HuggingFace space by ```git clone https://huggingface.co/spaces/mPLUG/DocOwl``` . You can also change ```model-source``` to ```huggingface```, or ```local``` and specify the ```model-path```. We have verified that the local demo works on A100-80G or V100-32G.
+Note: The demo is build based on ```gradio==3.27.0```. If you must use ```gradio==4.26.0```, you can refer to our code on HuggingFace space by ```git clone https://huggingface.co/spaces/mPLUG/DocOwl``` . You can also change ```model-source``` to ```huggingface```, or ```local``` and specify the ```model-path```. We have verified that the local demo works on A100-80G or V100-32G.
 
 
 ## Citation
