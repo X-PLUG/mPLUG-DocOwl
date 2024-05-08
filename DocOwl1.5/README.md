@@ -209,8 +209,8 @@ Note: ```$TASK``` should be chosen from ```[text_grounding, text_recognition]```
 ### Model Training
 You can further finetune your own models based on DocOwl 1.5 models.
 1. Prepare a training jsonl file, organize each training sample in the same format as follows:
+  ```{"image": ["./imgs/DUE_Benchmark/DocVQA/pngs/xnbl0037_1.png"], "messages": [{"role": "user", "content": "<|image|>what is the date mentioned in this letter?"}, {"role": "assistant", "content": "1/8/93"}], "task_name": "qa_sft", "dataset_name": "DocVQA"}``` (Note: please make sure the number of ```<|image|>``` is equal to the number of input images.)
 
-  ```{"image": ["./imgs/DUE_Benchmark/DocVQA/pngs/xnbl0037_1.png"], "messages": [{"role": "user", "content": "<|image|>what is the date mentioned in this letter?"}, {"role": "assistant", "content": "1/8/93"}], "task_name": "qa_sft", "dataset_name": "DocVQA"}```
 
 2. Modify parameters in ```./scripts/finetune_docowl.sh``` according to your personal needs. ```./scripts/finetune_docowl.sh``` provides an example of finetuning DocDownstream-1.0 based on DocOwl1.5-stage1.
 
