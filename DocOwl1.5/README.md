@@ -214,7 +214,7 @@ You can further finetune your own models based on DocOwl 1.5 models.
 
 2. Modify parameters in ```./scripts/finetune_docowl.sh``` according to your personal needs. ```./scripts/finetune_docowl.sh``` provides an example of finetuning DocDownstream-1.0 based on DocOwl1.5-stage1.
 
-3. Run ````bash ./scripts/finetune_docowl.sh```
+3. Run ```bash ./scripts/finetune_docowl.sh```.
 
 Note: Our DocOwl 1.5 is trained with Megatron. We additionaly build training codes supported by DeepSpeed for open-sourcing. We have tested the training scripts runs well on A100-80g with zero2. But We meet deadlock issues when using zero3. If you are willing to share any ideas about how to fix the deadlock issues of zero3, we will appreciate very much!
 
