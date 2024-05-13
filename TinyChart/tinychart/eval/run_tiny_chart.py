@@ -72,12 +72,12 @@ def inference_model(image_files, query, model, tokenizer, image_processor, conte
         images,
         image_processor,
         model.config
-    ).to(model.device, dtype=torch.float16)
+    ).to(model.device, dtype=torch.float16 if "cuda" in str(model.device) else torch.float32)
 
     input_ids = (
         tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors="pt")
         .unsqueeze(0)
-        .cuda()
+        .to(model.device)
     )
 
     stop_str = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2

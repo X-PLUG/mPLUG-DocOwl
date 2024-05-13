@@ -40,6 +40,8 @@ def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, l
             bnb_4bit_use_double_quant=True,
             bnb_4bit_quant_type='nf4'
         )
+    elif device == "cpu":
+        kwargs['torch_dtype'] = torch.float32
     else:
         kwargs['torch_dtype'] = torch.float16
 
@@ -115,7 +117,10 @@ def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, l
         vision_tower.load_model()
 
     if device != "auto":
-        vision_tower.to(device=device, dtype=torch.float16)
+        if device == 'cpu':
+            vision_tower.to(device=device, dtype=torch.float32)
+        else:
+            vision_tower.to(device=device, dtype=torch.float16)
 
     image_processor = vision_tower.image_processor
 
