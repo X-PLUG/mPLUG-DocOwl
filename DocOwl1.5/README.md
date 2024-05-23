@@ -212,11 +212,11 @@ You can further finetune your own models based on DocOwl 1.5 models.
   ```{"image": ["./imgs/DUE_Benchmark/DocVQA/pngs/xnbl0037_1.png"], "messages": [{"role": "user", "content": "<|image|>what is the date mentioned in this letter?"}, {"role": "assistant", "content": "1/8/93"}], "task_name": "qa_sft", "dataset_name": "DocVQA"}``` (Note: please make sure the number of ```<|image|>``` is equal to the number of input images.)
 
 
-2. Modify parameters in ```./scripts/finetune_docowl.sh``` according to your personal needs. ```./scripts/finetune_docowl.sh``` provides an example of finetuning DocDownstream-1.0 based on DocOwl1.5-stage1.
+2. Modify parameters in ```./scripts/finetune_docowl.sh``` or ```./scripts/finetune_docowl_lora.sh``` according to your personal needs. ```./scripts/finetune_docowl.sh``` provides an example of finetuning DocOwl1.5-stage1 on DocDownstream-1.0. ```./scripts/finetune_docowl_lora.sh``` provides an example of finetuning DocOwl1.5-stage1 with LoRA.
 
-3. Run ```bash ./scripts/finetune_docowl.sh```.
+3. Run ```bash ./scripts/finetune_docowl.sh``` or ```bash ./scripts/finetune_docowl_lora.sh```.
 
-Note: Our DocOwl 1.5 is trained with Megatron. We additionaly build training codes supported by DeepSpeed for open-sourcing. We have tested the training scripts runs well on A100-80g with zero2. But We meet deadlock issues when using zero3. If you are willing to share any ideas about how to fix the deadlock issues of zero3, we will appreciate very much!
+Note: Our DocOwl 1.5 is trained with Megatron. We additionaly build training codes supported by DeepSpeed for open-sourcing. We have tested the training scripts runs well on A100-80g with zero2. But We meet deadlock issues when using zero3. If you are willing to share any ideas about how to fix the deadlock issues of zero3, we will appreciate very much! 
 
 
 ## Local Demo
