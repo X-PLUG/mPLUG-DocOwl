@@ -10,6 +10,10 @@ for OCR-free Document Understanding<h2>
 <strong>Alibaba Group</strong>
 </div>
 
+<p align="center">
+<a href="https://trendshift.io/repositories/9061" target="_blank"><img src="https://trendshift.io/api/badge/repositories/9061" alt="DocOwl | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+</p>
+
 
 ## 📢 News
 * 🔥🔥🔥 [2024.5.08] We have released the training code of [DocOwl1.5](./DocOwl1.5/) supported by DeepSpeed. You can now finetune a stronger model based on DocOwl1.5!
@@ -19,7 +23,7 @@ for OCR-free Document Understanding<h2>
 * 🔥 [2024.3.20] We release the arxiv paper of [mPLUG-DocOwl 1.5](http://arxiv.org/abs/2403.12895), a SOTA 8B Multimodal LLM on OCR-free Document Understanding (DocVQA 82.2, InfoVQA 50.7, ChartQA 70.2, TextVQA 68.6).
 * [2024.01.13] Our Scientific Diagram Analysis dataset [M-Paper](https://github.com/X-PLUG/mPLUG-DocOwl/tree/main/PaperOwl) has been available on both **HuggingFace** 🤗 and **ModelScope** <img src="./assets/modelscope.png" width='20'>, containing 447k high-resolution diagram images and corresponding paragraph analysis.
 * [2023.10.13] Training data, models of [mPLUG-DocOwl](./DocOwl/)/[UReader](./UReader/) has been open-sourced.
-* [2023.10.10] Our paper [UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model](https://arxiv.org/abs/2310.05126) is accepted by EMNLP 2023.
+* [2023.10.10] Our paper [UReader](https://arxiv.org/abs/2310.05126) is accepted by EMNLP 2023.
 <!-- * 🔥 [10.10] The source code and instruction data will be released in [UReader](https://github.com/LukeForeverYoung/UReader). -->
 * [2023.07.10] The demo of mPLUG-DocOwl on [ModelScope](https://modelscope.cn/studios/damo/mPLUG-DocOwl/summary) is avaliable.
 * [2023.07.07] We release the technical report and evaluation set of mPLUG-DocOwl.
