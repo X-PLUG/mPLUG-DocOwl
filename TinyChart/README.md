@@ -24,15 +24,13 @@ Liang Zhang*, Anwen Hu*, Haiyang Xu, Ming Yan, Yichen Xu, Qin Jin†, Ji Zhang, 
 
 * Support chart question answering with both simple direct answers and step-by-step Python programs.
 * Support chart-to-table extraction, chart summary generation, and chart redrawing.
-* Available
+* Opensource:
     - ✅ Model: TinyChart
     - ✅ Inference code.
     - ✅ Code of launching a local demo.
     - ✅ Online demo on HuggingFace.
-* Coming soon
-    - [ ] Online demo on ModelScope.
-    - [ ] Evaluation code.
-    - [ ] Training data and code.
+    - ✅ Evaluation code.
+    - ✅ Training data and code.
 
 ## Examples
 <div align="center">
@@ -46,8 +44,8 @@ Liang Zhang*, Anwen Hu*, Haiyang Xu, Ming Yan, Yichen Xu, Qin Jin†, Ji Zhang, 
 ### Model Card
 |  Model   | Download Link  |
 |  ----  | ----  |
-| TinyChart@768  | [🤗 mPLUG/TinyChart-3B-768](https://huggingface.co/mPLUG/TinyChart-3B-768) <br> [🤖 iic/TinyChart-3B-768](https://modelscope.cn/models/iic/TinyChart-3B-768)|
-| TinyChart@768-SigLIP | [🤗 mPLUG/TinyChart-3B-768-siglip](https://huggingface.co/mPLUG/TinyChart-3B-768-siglip) <br> [🤖 iic/TinyChart-3B-768-siglip](https://modelscope.cn/models/iic/TinyChart-3B-768-siglip)
+| TinyChart@768  | 🤗 [mPLUG/TinyChart-3B-768](https://huggingface.co/mPLUG/TinyChart-3B-768) <br> 🤖 [iic/TinyChart-3B-768](https://modelscope.cn/models/iic/TinyChart-3B-768)|
+| TinyChart@768-SigLIP | 🤗 [mPLUG/TinyChart-3B-768-siglip](https://huggingface.co/mPLUG/TinyChart-3B-768-siglip) <br> 🤖 [iic/TinyChart-3B-768-siglip](https://modelscope.cn/models/iic/TinyChart-3B-768-siglip)
 
 Note that to use TinyChart@768, you should load the vision transformer with token merging from TinyChart@768-SigLIP. If you download the model into local directory, you should change `mm_vision_tower` in `config.json` of `TinyChart-3B-768` to make sure it can find `TinyChart-3B-768-siglip`.
 
@@ -68,6 +66,25 @@ tokenizer, model, image_processor, context_len = load_pretrained_model(
 ### Model Inference
 We provide an example script to perform inference in [`inference.ipynb`](inference.ipynb).
 
+## Model Training & Evaluation
+### Data preparation
+The training and evaluation data of TinyChart is released at 🤗 [mPLUG/TinyChartData](https://huggingface.co/datasets/mPLUG/TinyChartData). Samples with id contains `tempatepot` and `gptpot` are the two subsets of the proposed ChartQA-PoT dataset. To perform training and evaluation, you should download and organize the `data` directory as follows:
+```
+data
+├── tinychart_images
+├── train.json
+├── test.json
+
+```
+Then download [`bczhou/TinyLLaVA-3.1B-SigLIP`](https://huggingface.co/bczhou/TinyLLaVA-3.1B-SigLIP) into `pretrained_models`, and run this script to add arguments about token merging. Note that this script will change the `config.json` of the model **inplace**, please backup in advance.
+```
+python scripts/vit_add_tome.py --path pretrained_models/TinyLLaVA-3.1B-SigLIP
+```
+
+After that, run the following scripts to start training. It will automatically load the last checkpoint to perform evaluation.
+```
+bash scripts/train.sh
+```
 
 ## Local Demo
 You can run a local demo with the following scrit:

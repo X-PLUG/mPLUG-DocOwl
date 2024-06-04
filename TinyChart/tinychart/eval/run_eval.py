@@ -5,6 +5,8 @@ import pandas as pd
 from collections import defaultdict
 from tinychart.eval.eval_metric import chartqa_evaluator, chartqapot_evaluator
 from tinychart.eval.eval_metric import chartqa_oracle_merger_evaluator, chartqa_rule_merger_evaluator
+from tinychart.eval.eval_chart2text import chart2text_evaluator
+from tinychart.eval.eval_chart2table import chart2table_evaluator
 
 def read_jsonl(jsonl_path):
     with open(jsonl_path, 'r') as f:
@@ -44,6 +46,20 @@ if __name__ == '__main__':
             dataset2metric[dataset_name] = round(pot_acc * 100, 2)
             print(f'PoT Accuracy: {pot_acc}')
             print(f'PoT Error Rate: {error_rate}')
+        elif 'chart2text' in dataset_name:
+            metric = chart2text_evaluator(result_data, temp_dir=args.input)
+            dataset2metric[dataset_name] = metric
+            print(f'{dataset_name} bleu: {metric}')
+        elif 'opencqa-absqa' in dataset_name:
+            metric = chart2text_evaluator(result_data, temp_dir=args.input)
+            dataset2metric[dataset_name] = metric
+            print(f'{dataset_name} bleu: {metric}')
+        elif 'chartqa2table-' in dataset_name:
+            metric = chart2table_evaluator(result_data)
+            dataset2metric[dataset_name] = metric
+            print(f'{dataset_name} F1: {metric}')
+        else:
+            print(f'Skip unknown dataset: {result_file}')
 
     if direct_result is not None and pot_result is not None:
         print("Calculate merging direct and pot results with simple divider")
