@@ -28,7 +28,7 @@ DocOwl2 <a href="">🤗</a><a href=""> <img src="assets/modelscope.png" width='2
 
 <hr>
 <div align="center">
-<img src="assets/docowl2_effiency_and_case.jpg" alt="image" width="70%" height="auto">
+<img src="assets/docowl2_effiency_and_case.jpg" alt="image" width="90%" height="auto">
 </div>
 </p>
 
