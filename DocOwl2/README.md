@@ -9,7 +9,7 @@ Anwen Hu, Haiyang Xu†, Liang Zhang, Jiabo Ye, Ming Yan†, Ji Zhang, Qin Jin, 
 
 
 <div align="center">
-<a href=""><img src="assets/Paper-Arxiv-orange.svg" ></a>
+<a href="https://arxiv.org/abs/2409.03420"><img src="assets/Paper-Arxiv-orange.svg" ></a>
 </div>
 <div align="center">
 Data: 
