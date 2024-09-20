@@ -16,6 +16,7 @@ for OCR-free Document Understanding<h2>
 
 
 ## 📢 News
+* 🔥🔥🔥 [2024.9.20] Our paper [DocOwl 1.5](http://arxiv.org/abs/2403.12895) and [TinyChart](https://arxiv.org/abs/2404.16635) is accepted by EMNLP 2024.
 * 🔥🔥🔥 [2024.9.06] We release the arxiv paper of [mPLUG-DocOwl 2](https://arxiv.org/abs/2409.03420), a SOTA 8B Multimodal LLM on OCR-free Multipage Document Understanding, each document image is encoded with just 324 tokens!
 * 🔥🔥 [2024.7.16] Our paper [PaperOwl](https://arxiv.org/abs/2311.18248) is accepted by ACM MM 2024.
 * 🔥🔥[2024.5.08] We have released the training code of [DocOwl1.5](./DocOwl1.5/) supported by DeepSpeed. You can now finetune a stronger model based on DocOwl1.5!
@@ -33,9 +34,9 @@ for OCR-free Document Understanding<h2>
 ## 🤖 Models
 - [**mPLUG-DocOwl2**](./DocOwl2/) (Arxiv 2024) - mPLUG-DocOwl2: High-resolution Compressing for OCR-free Multi-page Document Understanding
 
-- [**mPLUG-DocOwl1.5**](./DocOwl1.5/) (Arxiv 2024) - mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding
+- [**mPLUG-DocOwl1.5**](./DocOwl1.5/) (EMNLP 2024) - mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding
 
-- [**TinyChart**](./TinyChart/) (Arxiv 2024) - TinyChart: Efficient Chart Understanding with
+- [**TinyChart**](./TinyChart/) (EMNLP 2024) - TinyChart: Efficient Chart Understanding with
 Visual Token Merging and Program-of-Thoughts Learning
 
 - [**mPLUG-PaperOwl**](./PaperOwl/) (ACM MM 2024) - mPLUG-PaperOwl: Scientific Diagram Analysis with the Multimodal Large Language Model
