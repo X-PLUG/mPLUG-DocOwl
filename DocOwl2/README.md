@@ -88,3 +88,20 @@ answer = docowl.inference(images, query='what is this paper about? provide detai
 
 answer = docowl.inference(images, query='what is the third page about? provide detailed information.')
 ```
+
+### Model Evaluation
+prepare environments for evaluation as follows:
+```
+pip install textdistance
+pip install editdistance
+pip install pycocoevalcap
+```
+
+Evaluate DocOwl2 on 10 single-image tasks, 2 multi-page tasks and 1 video task:
+```
+python docowl_benchmark_evaluate.py --model_path $MODEL_PATH --dataset $DATASET --downstream_dir $DOWNSTREAM_DIR_PATH --save_dir $SAVE_DIR --split $split
+```
+Note: 
+For sinlge-image evaluation, ```$DATASET``` should be chosen from ```[DocVQA, InfographicsVQA, WikiTableQuestions, DeepForm,KleisterCharity, TabFact, ChartQA, TextVQA, TextCaps, VisualMRC]```. ```$DOWNSTREAM_DIR_PATH``` is the local path of [mPLUG/DocDownstream-1.0](https://huggingface.co/datasets/mPLUG/DocDownstream-1.0), ```$split==test```.
+
+For multi-page evaluation and video evaluation, ```$DATASET``` should be chosen from ```[MP-DocVQA, DUDE, NewsVideoQA]```. ```$DOWNSTREAM_DIR_PATH``` is the local path of [mPLUG/DocDownstream-2.0](https://huggingface.co/datasets/mPLUG/DocDownstream-2.0), ```$split==val```. You can also set ```$split==test``` and submit the file named with suffix ```_submission.json``` to the [official evaluation website](https://rrc.cvc.uab.es/).
