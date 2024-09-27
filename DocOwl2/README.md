@@ -22,7 +22,7 @@ DocDownstream 2.0 <a href="">🤗</a><a href=""> <img src="assets/modelscope.png
 Models:
 DocOwl2-stage1 <a href="">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
 DocOwl2-stage2 <a href="">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
-DocOwl2 <a href="https://huggingface.co/mPLUG/DocOwl2">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
+DocOwl2 <a href="https://huggingface.co/mPLUG/DocOwl2">🤗</a><a href="https://modelscope.cn/models/iic/DocOwl2"> <img src="assets/modelscope.png" width='20'></a>
 </div>
 
 
@@ -50,7 +50,7 @@ DocOwl2 <a href="https://huggingface.co/mPLUG/DocOwl2">🤗</a><a href=""> <img 
 ### Model Card
 |  Model   | Download Link  | Abilities |
 |  ----  | ----  | ----  |
-| DocOwl2  | <li> 🤗 [mPLUG/DocOwl2](https://huggingface.co/mPLUG/DocOwl2) | <li> Multi-page VQA with detailed explanations <li> Multi-page VQA with concise answers |
+| DocOwl2  | <li> 🤗 [mPLUG/DocOwl2](https://huggingface.co/mPLUG/DocOwl2) <li> <img src="assets/modelscope.png" width='20'> [iic/DocOwl2](https://modelscope.cn/models/iic/DocOwl2) | <li> Multi-page VQA with detailed explanations <li> Multi-page VQA with concise answers |
 
 ### Model Inference
 
