@@ -14,7 +14,7 @@ Anwen Hu, Haiyang Xu†, Liang Zhang, Jiabo Ye, Ming Yan†, Ji Zhang, Qin Jin, 
 <div align="center">
 Data: 
 MP-DocStruct1M
-<a href="https://huggingface.co/datasets/mPLUG/MP-DocStruct1M">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
+<a href="https://huggingface.co/datasets/mPLUG/MP-DocStruct1M">🤗</a><a href="https://modelscope.cn/datasets/iic/MP-DocStruct1M"> <img src="assets/modelscope.png" width='20'></a>
 MP-DocReason51K <a href="https://huggingface.co/datasets/mPLUG/MP-DocReason51K">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
 DocDownstream 2.0 <a href="https://huggingface.co/datasets/mPLUG/DocDownstream-2.0">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
 DocGenome12K <a href="https://huggingface.co/datasets/mPLUG/DocGenome12K">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
@@ -52,7 +52,7 @@ DocOwl2 <a href="https://huggingface.co/mPLUG/DocOwl2">🤗</a><a href="https://
 ## Training and Evaluation Datasets
 |  Dataset   | Download Link |
 |  ----  | ----  | 
-|  MP-DocStruct1M   | <li>[HuggingFace: mPLUG/MP-DocStruct1M](https://huggingface.co/datasets/mPLUG/MP-DocStruct1M)|
+|  MP-DocStruct1M   | <li>[HuggingFace: mPLUG/MP-DocStruct1M](https://huggingface.co/datasets/mPLUG/MP-DocStruct1M) <li> [ModelScope: iic/MP-DocStruct1M](https://modelscope.cn/datasets/iic/MP-DocStruct1M)|
 |  DocDownstream-2.0   | <li>[HuggingFace: mPLUG/DocDownstream-2.0](https://huggingface.co/datasets/mPLUG/DocDownstream-2.0)|
 |  MP-DocReason51K   | <li>[HuggingFace: mPLUG/MP-DocReason51K](https://huggingface.co/datasets/mPLUG/MP-DocReason51K) |
 |  DocGenome12K   | <li>[HuggingFace: mPLUG/DocGenome12K](https://huggingface.co/datasets/mPLUG/DocGenome12K) |
