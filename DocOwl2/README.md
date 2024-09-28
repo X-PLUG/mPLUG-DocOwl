@@ -66,7 +66,7 @@ DocOwl2 <a href="https://huggingface.co/mPLUG/DocOwl2">🤗</a><a href="https://
 
 ### Model Inference
 
-```
+```python
 import torch
 import os
 from transformers import AutoTokenizer, AutoModel
