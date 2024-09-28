@@ -14,9 +14,10 @@ Anwen Hu, Haiyang Xu†, Liang Zhang, Jiabo Ye, Ming Yan†, Ji Zhang, Qin Jin, 
 <div align="center">
 Data: 
 MP-DocStruct1M
-<a href="">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
-MP-DocReason51K <a href="">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
-DocDownstream 2.0 <a href="">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
+<a href="https://huggingface.co/datasets/mPLUG/MP-DocStruct1M">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
+MP-DocReason51K <a href="https://huggingface.co/datasets/mPLUG/MP-DocReason51K">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
+DocDownstream 2.0 <a href="https://huggingface.co/datasets/mPLUG/DocDownstream-2.0">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
+DocGenome12K <a href="https://huggingface.co/datasets/mPLUG/DocGenome12K">🤗</a><a href=""> <img src="assets/modelscope.png" width='20'></a>
 </div>
 <div align="center">
 Models:
@@ -39,12 +40,23 @@ DocOwl2 <a href="https://huggingface.co/mPLUG/DocOwl2">🤗</a><a href="https://
 * Support Text-rich Video Understanding.
 
 * Open Source
-    - [ ] Training Data: MP-DocStruct1M, MP-DocReason51K, DocDownsteam-2.0
-    - [ ] Model: DocOwl2-stage1, DocOwl2-stage2, DocOwl2
-    - [ ] Source code of model inference and evaluation.
+    - ✅ Training Data: MP-DocStruct1M, MP-DocReason51K, DocDownsteam-2.0, DocGenome12K
+    - ✅ Model: DocOwl2
+    - ✅ Source code of model inference and evaluation.
+    - [ ] Model: DocOwl2-stage1, DocOwl2-stage2, 
     - [ ]  Online Demo on ModelScope and HuggingFace.
     - [ ]  Source code of launching a local demo.
     - [ ] Training code.
+
+
+## Training and Evaluation Datasets
+|  Dataset   | Download Link |
+|  ----  | ----  | 
+|  MP-DocStruct1M   | <li>[HuggingFace: mPLUG/MP-DocStruct1M](https://huggingface.co/datasets/mPLUG/MP-DocStruct1M)|
+|  DocDownstream-2.0   | <li>[HuggingFace: mPLUG/DocDownstream-2.0](https://huggingface.co/datasets/mPLUG/DocDownstream-2.0)|
+|  MP-DocReason51K   | <li>[HuggingFace: mPLUG/MP-DocReason51K](https://huggingface.co/datasets/mPLUG/MP-DocReason51K) |
+|  DocGenome12K   | <li>[HuggingFace: mPLUG/DocGenome12K](https://huggingface.co/datasets/mPLUG/DocGenome12K) |
+
 
 ## Models
 ### Model Card
