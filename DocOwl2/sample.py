@@ -32,20 +32,23 @@ class DocOwlInfer():
         answer = self.model.chat(messages=messages, images=images, tokenizer=self.tokenizer)
         return answer
 
-
-docowl = DocOwlInfer(ckpt_path='mPLUG/DocOwl2')
-
 download_imgs()
-
 images = [
         './examples/docowl2_page0.png',
-        './examples/docowl2_page1.png',
-        './examples/docowl2_page2.png',
-        # './examples/docowl2_page3.png', # to avoid cuda out of memory, I commented out these.
+        # './examples/docowl2_page1.png', # to avoid cuda out of memory, I commented out these.
+        # './examples/docowl2_page2.png', 
+        # './examples/docowl2_page3.png', 
         # './examples/docowl2_page4.png',
         # './examples/docowl2_page5.png',
     ]
 
-answer = docowl.inference(images, query='what is this paper about? provide detailed information.')
+# Free GPU memory
+torch.cuda.empty_cache()
 
-answer = docowl.inference(images, query='what is the third page about? provide detailed information.')
+docowl = DocOwlInfer(ckpt_path='mPLUG/DocOwl2')
+
+answer = docowl.inference(images, query='what is this paper about? provide detailed information.')
+torch.cuda.empty_cache()
+
+# answer = docowl.inference(images, query='what is the third page about? provide detailed information.')
+# torch.cuda.empty_cache()
