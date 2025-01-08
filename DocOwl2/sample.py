@@ -3,7 +3,24 @@ import os
 from transformers import AutoTokenizer, AutoModel
 from icecream import ic
 import time
+import subprocess
 
+def download_imgs():
+    os.makedirs("examples", exist_ok=True)
+    # download only if it is not existed.
+    urls = [
+        "https://huggingface.co/mPLUG/DocOwl2/resolve/main/examples/docowl2_page0.png?download=true",
+        "https://huggingface.co/mPLUG/DocOwl2/resolve/main/examples/docowl2_page1.png?download=true",
+        "https://huggingface.co/mPLUG/DocOwl2/resolve/main/examples/docowl2_page2.png?download=true",
+        "https://huggingface.co/mPLUG/DocOwl2/resolve/main/examples/docowl2_page3.png?download=true",
+        "https://huggingface.co/mPLUG/DocOwl2/resolve/main/examples/docowl2_page4.png?download=true",
+        "https://huggingface.co/mPLUG/DocOwl2/resolve/main/examples/docowl2_page5.png?download=true"
+    ]
+    for i, url in enumerate(urls):
+        file_path = f"examples/docowl2_page{i}.png"
+        if not os.path.exists(file_path):
+            subprocess.run(["wget", "-O", file_path, url])
+            
 class DocOwlInfer():
     def __init__(self, ckpt_path):
         self.tokenizer = AutoTokenizer.from_pretrained(ckpt_path, use_fast=False)
@@ -18,13 +35,15 @@ class DocOwlInfer():
 
 docowl = DocOwlInfer(ckpt_path='mPLUG/DocOwl2')
 
+download_imgs()
+
 images = [
         './examples/docowl2_page0.png',
         './examples/docowl2_page1.png',
         './examples/docowl2_page2.png',
-        './examples/docowl2_page3.png',
-        './examples/docowl2_page4.png',
-        './examples/docowl2_page5.png',
+        # './examples/docowl2_page3.png', # to avoid cuda out of memory, I commented out these.
+        # './examples/docowl2_page4.png',
+        # './examples/docowl2_page5.png',
     ]
 
 answer = docowl.inference(images, query='what is this paper about? provide detailed information.')
