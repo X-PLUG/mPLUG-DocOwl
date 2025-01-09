@@ -5,8 +5,8 @@ from icecream import ic
 import time
 import subprocess
 
-def download_imgs():
-    os.makedirs("examples", exist_ok=True)
+def download_imgs(download_dir='examples'):
+    os.makedirs(download_dir, exist_ok=True)
     # download only if it is not existed.
     urls = [
         "https://huggingface.co/mPLUG/DocOwl2/resolve/main/examples/docowl2_page0.png?download=true",
@@ -17,7 +17,7 @@ def download_imgs():
         "https://huggingface.co/mPLUG/DocOwl2/resolve/main/examples/docowl2_page5.png?download=true"
     ]
     for i, url in enumerate(urls):
-        file_path = f"examples/docowl2_page{i}.png"
+        file_path = f"{download_dir}/docowl2_page{i}.png"
         if not os.path.exists(file_path):
             subprocess.run(["wget", "-O", file_path, url])
             
@@ -32,14 +32,16 @@ class DocOwlInfer():
         answer = self.model.chat(messages=messages, images=images, tokenizer=self.tokenizer)
         return answer
 
-download_imgs()
+current_dir = os.path.dirname(os.path.abspath(__file__))
+download_dir = f'{current_dir}/examples'
+download_imgs(download_dir)
 images = [
-        './examples/docowl2_page0.png',
-        # './examples/docowl2_page1.png', # to avoid cuda out of memory, I commented out these.
-        # './examples/docowl2_page2.png', 
-        # './examples/docowl2_page3.png', 
-        # './examples/docowl2_page4.png',
-        # './examples/docowl2_page5.png',
+        f'{download_dir}/docowl2_page0.png',
+        # f'{download_dir}/docowl2_page1.png', # to avoid cuda out of memory, I commented out these.
+        # f'{download_dir}/docowl2_page2.png',
+        # f'{download_dir}/docowl2_page3.png',
+        # f'{download_dir}/docowl2_page4.png',
+        # f'{download_dir}/docowl2_page5.png'
     ]
 
 # Free GPU memory
