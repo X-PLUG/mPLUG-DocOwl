@@ -16,6 +16,7 @@ for OCR-free Document Understanding<h2>
 
 
 ## 📢 News
+* 🔥🔥🔥 [2025.5.16] Our paper [DocOwl2](https://arxiv.org/abs/2409.03420) is accepted by ACL 2025.
 * 🔥🔥🔥 [2024.12.24] We have released the training code of DocOwl2 by [**ms-swift**](https://github.com/modelscope/ms-swift)! Now you can finetune a stronger model with your own data based on DocOwl2!
 * 🔥🔥🔥 [2024.9.28] We have released the training data, inference code and evaluation code of [DocOwl2](./DocOwl2/) on both **HuggingFace** 🤗 and **ModelScope** <img src="./assets/modelscope.png" width='20'>.
 * 🔥🔥🔥 [2024.9.20] Our paper [DocOwl 1.5](http://arxiv.org/abs/2403.12895) and [TinyChart](https://arxiv.org/abs/2404.16635) is accepted by EMNLP 2024.
